@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Group travel services by Explore Easy Tours & Travels. Organise corporate trips, family groups, friends tours and school excursions with special rates.">
+    <title>Group Travel Services | Explore Easy Tours & Travels</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .group-feature {
+            display: flex;
+            align-items: flex-start;
+            gap: 1.25rem;
+            padding: 1.5rem;
+            background: var(--navy-card);
+            border: 1px solid var(--border-glass);
+            border-radius: var(--radius-md);
+            transition: var(--transition);
+        }
+
+        .group-feature:hover {
+            border-color: var(--gold);
+        }
+
+        .group-icon {
+            font-size: 2rem;
+            flex-shrink: 0;
+            width: 56px;
+            height: 56px;
+            background: rgba(212, 175, 55, 0.1);
+            border-radius: var(--radius-sm);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <section class="page-hero">
+            <div class="page-hero-bg"
+                style="background-image:url('https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=1920&q=80');opacity:0.4">
+            </div>
+            <div class="page-hero-overlay"></div>
+            <div class="container">
+                <div class="page-hero-content">
+                    <div class="breadcrumb"><a href="index.html">Home</a><span>/</span><span>Group Travel</span></div>
+                    <p class="section-label">👥 For Groups & Corporates</p>
+                    <h1>Group Travel <span class="highlight italic">Services</span></h1>
+                    <p style="max-width:520px;margin-top:1rem;color:var(--white-60)">Special rates and VIP handling for
+                        groups of 10 or more. Families, corporates, schools, and clubs welcome!</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="grid-2" style="gap:4rem;align-items:start">
+                    <div>
+                        <p class="section-label">What We Offer</p>
+                        <h2 class="section-title reveal">Why Choose Group <span class="highlight italic">Travel?</span>
+                        </h2>
+                        <p class="reveal delay-1">Group travel is more than just a shared trip — it's about creating
+                            shared memories. We handle all logistics so you can focus on the experience.</p>
+                        <div style="display:flex;flex-direction:column;gap:1rem;margin-top:2rem">
+                            <div class="group-feature reveal">
+                                <div class="group-icon">💰</div>
+                                <div>
+                                    <h4>Special Group Discounts</h4>
+                                    <p style="font-size:0.87rem">Groups of 10+ get up to 20% off on packages, hotels and
+                                        transport.</p>
+                                </div>
+                            </div>
+                            <div class="group-feature reveal delay-1">
+                                <div class="group-icon">🚌</div>
+                                <div>
+                                    <h4>Dedicated Transport</h4>
+                                    <p style="font-size:0.87rem">AC coaches, luxury buses and charter flights arranged
+                                        specifically for your group.</p>
+                                </div>
+                            </div>
+                            <div class="group-feature reveal delay-2">
+                                <div class="group-icon">🏨</div>
+                                <div>
+                                    <h4>Block Hotel Bookings</h4>
+                                    <p style="font-size:0.87rem">We negotiate exclusive rates with hotels for group
+                                        blocks including customised meal plans.</p>
+                                </div>
+                            </div>
+                            <div class="group-feature reveal delay-3">
+                                <div class="group-icon">🗺</div>
+                                <div>
+                                    <h4>Dedicated Tour Guide</h4>
+                                    <p style="font-size:0.87rem">A bilingual tour escort accompanies your group
+                                        throughout the entire journey.</p>
+                                </div>
+                            </div>
+                            <div class="group-feature reveal">
+                                <div class="group-icon">📱</div>
+                                <div>
+                                    <h4>WhatsApp Group Coordination</h4>
+                                    <p style="font-size:0.87rem">Real-time itinerary updates, alerts and coordination
+                                        via a dedicated WhatsApp group.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="glass-card-sm reveal" style="padding:2.5rem">
+                            <h3 style="color:var(--white);margin-bottom:1.5rem;font-size:1.5rem">Group Trip Enquiry</h3>
+                            <form onsubmit="return false;">
+                                <div class="form-group"><label class="form-label">Group Leader Name</label><input
+                                        class="form-input" type="text" placeholder="Your full name"></div>
+                                <div class="form-group"><label class="form-label">Contact Number</label><input
+                                        class="form-input" type="tel" placeholder="+91 XXXXX XXXXX"></div>
+                                <div class="form-group"><label class="form-label">Email Address</label><input
+                                        class="form-input" type="email" placeholder="your@email.com"></div>
+                                <div class="grid-2" style="gap:1rem">
+                                    <div class="form-group"><label class="form-label">Group Size</label><select
+                                            class="form-select">
+                                            <option>10-20 people</option>
+                                            <option>21-50 people</option>
+                                            <option>51-100 people</option>
+                                            <option>100+ people</option>
+                                        </select></div>
+                                    <div class="form-group"><label class="form-label">Group Type</label><select
+                                            class="form-select">
+                                            <option>Family Group</option>
+                                            <option>Corporate</option>
+                                            <option>School/College</option>
+                                            <option>Friends</option>
+                                        </select></div>
+                                </div>
+                                <div class="form-group"><label class="form-label">Destination Preference</label><input
+                                        class="form-input" type="text" placeholder="e.g. Ooty, Kerala, Bali, Europe...">
+                                </div>
+                                <div class="form-group"><label class="form-label">Preferred Travel Period</label><input
+                                        class="form-input" type="text" placeholder="e.g. March 2025"></div>
+                                <div class="form-group"><label class="form-label">Budget per Person
+                                        (approx.)</label><select class="form-select">
+                                        <option>Under ₹10,000</option>
+                                        <option>₹10,000 – ₹25,000</option>
+                                        <option>₹25,000 – ₹75,000</option>
+                                        <option>₹75,000+</option>
+                                    </select></div>
+                                <div class="form-group"><label class="form-label">Special Requirements</label><textarea
+                                        class="form-textarea"
+                                        placeholder="Any special needs, dietary preferences, accessibility requirements..."></textarea>
+                                </div>
+                                <button class="btn btn-primary" style="width:100%;justify-content:center">Submit Enquiry
+                                    ✈</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="margin-top:5rem">
+                    <div class="section-header">
+                        <p class="section-label">🏆 Popular Group Packages</p>
+                        <h2 class="section-title reveal">Group-Ready <span class="highlight italic">Packages</span></h2>
+                        <div class="divider"></div>
+                    </div>
+                    <div class="grid-3">
+                        <div class="pkg-card reveal">
+                            <div class="pkg-card-img"><img
+                                    src="https://images.unsplash.com/photo-1582510003544-4d00b7f74220?w=600&q=80"
+                                    alt="Tamil Nadu"><span class="pkg-card-badge">Best for Groups</span></div>
+                            <div class="pkg-card-body">
+                                <div class="pkg-card-title">Tamil Nadu Temple Circuit</div>
+                                <div class="pkg-card-meta"><span>📍 Tamil Nadu</span><span>📅 5D 4N</span></div>
+                                <p style="font-size:0.85rem">Madurai, Rameswaram, Kanyakumari with AC coach and guide.
+                                    Min 20 pax for group rate.</p>
+                                <div class="pkg-card-footer">
+                                    <div class="pkg-price"><span class="from">Group Rate</span><span
+                                            class="amount">₹6,999</span><span class="per">/person</span></div><a
+                                        href="tel:+919876543210" class="btn btn-primary"
+                                        style="padding:0.6rem 1.25rem;font-size:0.85rem">Enquire</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pkg-card reveal delay-1">
+                            <div class="pkg-card-img"><img
+                                    src="https://images.unsplash.com/photo-1526481280693-3bfa7568e0f3?w=600&q=80"
+                                    alt="Kerala"><span class="pkg-card-badge">Family Groups</span></div>
+                            <div class="pkg-card-body">
+                                <div class="pkg-card-title">Kerala Backwaters Group Tour</div>
+                                <div class="pkg-card-meta"><span>📍 Kerala</span><span>📅 7D 6N</span></div>
+                                <p style="font-size:0.85rem">Houseboat cruise for groups, Munnar hills, wildlife and
+                                    beaches. Min 25 pax.</p>
+                                <div class="pkg-card-footer">
+                                    <div class="pkg-price"><span class="from">Group Rate</span><span
+                                            class="amount">₹18,500</span><span class="per">/person</span></div><a
+                                        href="tel:+919876543210" class="btn btn-primary"
+                                        style="padding:0.6rem 1.25rem;font-size:0.85rem">Enquire</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pkg-card reveal delay-2">
+                            <div class="pkg-card-img"><img
+                                    src="https://images.unsplash.com/photo-1519922639192-e73293ca430e?w=600&q=80"
+                                    alt="Singapore"><span class="pkg-card-badge">International Group</span></div>
+                            <div class="pkg-card-body">
+                                <div class="pkg-card-title">Singapore & Malaysia Group</div>
+                                <div class="pkg-card-meta"><span>📍 South-East Asia</span><span>📅 7D 6N</span></div>
+                                <p style="font-size:0.85rem">Gardens by the Bay, Universal Studios, Genting Highlands
+                                    and Petronas Twin Towers.</p>
+                                <div class="pkg-card-footer">
+                                    <div class="pkg-price"><span class="from">Group Rate</span><span
+                                            class="amount">₹52,000</span><span class="per">/person</span></div><a
+                                        href="tel:+919876543210" class="btn btn-primary"
+                                        style="padding:0.6rem 1.25rem;font-size:0.85rem">Enquire</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="components.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

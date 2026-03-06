@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Book flights and hotels with Explore Easy Tours & Travels. Best fares guaranteed for domestic and international travel from Chennai, Tamil Nadu.">
+    <title>Flight & Hotel Booking | Explore Easy Tours & Travels</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .booking-tabs-bar {
+            display: flex;
+            gap: 0;
+            background: var(--navy-light);
+            border-radius: var(--radius-md);
+            padding: 4px;
+            width: fit-content;
+            margin: 0 auto 3rem;
+        }
+
+        .booking-tab {
+            padding: 0.75rem 2rem;
+            border-radius: calc(var(--radius-md) - 4px);
+            font-weight: 600;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            cursor: pointer;
+            transition: all 0.3s;
+            font-family: var(--font-sans);
+            background: none;
+            border: none;
+        }
+
+        .booking-tab.active {
+            background: var(--gold);
+            color: var(--navy);
+        }
+
+        .booking-panel {
+            display: none;
+        }
+
+        .booking-panel.active {
+            display: block;
+        }
+
+        .search-box {
+            background: rgba(19, 27, 46, 0.85);
+            border: 1px solid var(--border-glass);
+            border-radius: var(--radius-xl);
+            padding: 2.5rem;
+            backdrop-filter: blur(16px);
+        }
+
+        .search-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr auto;
+            gap: 1rem;
+            align-items: end;
+        }
+
+        @media(max-width:768px) {
+            .search-row {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media(max-width:480px) {
+            .search-row {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .deal-card {
+            background: var(--navy-card);
+            border: 1px solid var(--border-glass);
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            transition: var(--transition);
+        }
+
+        .deal-card:hover {
+            border-color: var(--gold);
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-glow);
+        }
+
+        .deal-card-img {
+            height: 180px;
+            overflow: hidden;
+        }
+
+        .deal-card-img img {
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s;
+        }
+
+        .deal-card:hover .deal-card-img img {
+            transform: scale(1.05);
+        }
+
+        .deal-card-body {
+            padding: 1.25rem;
+        }
+
+        .deal-route {
+            font-family: var(--font-serif);
+            font-size: 1.1rem;
+            color: var(--white);
+            margin-bottom: 0.5rem;
+        }
+
+        .deal-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .deal-price {
+            font-family: var(--font-serif);
+            font-size: 1.5rem;
+            color: var(--gold);
+            font-weight: 700;
+        }
+
+        .deal-tag {
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--text-muted);
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <section class="page-hero" style="min-height:50vh">
+            <div class="page-hero-bg"
+                style="background-image:url('https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=1920&q=80');opacity:0.35">
+            </div>
+            <div class="page-hero-overlay"></div>
+            <div class="container">
+                <div class="page-hero-content">
+                    <div class="breadcrumb"><a href="index.html">Home</a><span>/</span><span>Book Now</span></div>
+                    <p class="section-label">✈ Book Your Journey</p>
+                    <h1>Flights & <span class="highlight italic">Hotels</span></h1>
+                    <p style="max-width:520px;margin-top:1rem;color:var(--white-60)">Search thousands of flights and
+                        hotels. Get the best fares with our price match guarantee.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" style="padding-top:3rem">
+            <div class="container">
+                <div class="booking-tabs-bar">
+                    <button class="booking-tab active" data-tab="flights">✈ Flights</button>
+                    <button class="booking-tab" data-tab="hotels">🏨 Hotels</button>
+                    <button class="booking-tab" data-tab="combo">🎯 Combo</button>
+                </div>
+
+                <!-- FLIGHTS PANEL -->
+                <div class="booking-panel active" id="panel-flights">
+                    <div class="search-box reveal">
+                        <div style="display:flex;gap:1rem;margin-bottom:1.5rem;">
+                            <label
+                                style="display:flex;align-items:center;gap:0.4rem;cursor:pointer;font-size:0.85rem;color:var(--white-60)"><input
+                                    type="radio" name="trip" value="one" style="accent-color:var(--gold)"> One
+                                Way</label>
+                            <label
+                                style="display:flex;align-items:center;gap:0.4rem;cursor:pointer;font-size:0.85rem;color:var(--white-60)"><input
+                                    type="radio" name="trip" value="round" checked style="accent-color:var(--gold)">
+                                Round Trip</label>
+                            <label
+                                style="display:flex;align-items:center;gap:0.4rem;cursor:pointer;font-size:0.85rem;color:var(--white-60)"><input
+                                    type="radio" name="trip" value="multi" style="accent-color:var(--gold)">
+                                Multi-City</label>
+                        </div>
+                        <div class="search-row">
+                            <div class="form-group"><label class="form-label">From</label><input class="form-input"
+                                    type="text" placeholder="Chennai (MAA)" value="Chennai (MAA)"></div>
+                            <div class="form-group"><label class="form-label">To</label><input class="form-input"
+                                    type="text" placeholder="Select Destination"></div>
+                            <div class="form-group"><label class="form-label">Departure</label><input class="form-input"
+                                    type="date"></div>
+                            <button class="btn btn-primary" style="height:52px;padding:0 2rem;white-space:nowrap">Search
+                                Flights</button>
+                        </div>
+                        <div style="display:flex;gap:1rem;margin-top:1rem;flex-wrap:wrap">
+                            <div class="form-group" style="flex:1;min-width:160px"><label class="form-label">Return
+                                    Date</label><input class="form-input" type="date"></div>
+                            <div class="form-group" style="flex:1;min-width:160px"><label
+                                    class="form-label">Travellers</label><select class="form-select">
+                                    <option>1 Adult</option>
+                                    <option>2 Adults</option>
+                                    <option>2 Adults + 1 Child</option>
+                                    <option>Group (5+)</option>
+                                </select></div>
+                            <div class="form-group" style="flex:1;min-width:160px"><label
+                                    class="form-label">Class</label><select class="form-select">
+                                    <option>Economy</option>
+                                    <option>Premium Economy</option>
+                                    <option>Business</option>
+                                    <option>First Class</option>
+                                </select></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- HOTELS PANEL -->
+                <div class="booking-panel" id="panel-hotels">
+                    <div class="search-box reveal">
+                        <div class="search-row">
+                            <div class="form-group"><label class="form-label">City / Hotel</label><input
+                                    class="form-input" type="text" placeholder="e.g. Chennai, Dubai, Bali"></div>
+                            <div class="form-group"><label class="form-label">Check-In</label><input class="form-input"
+                                    type="date"></div>
+                            <div class="form-group"><label class="form-label">Check-Out</label><input class="form-input"
+                                    type="date"></div>
+                            <button class="btn btn-primary" style="height:52px;padding:0 2rem">Search Hotels</button>
+                        </div>
+                        <div style="display:flex;gap:1rem;margin-top:1rem;flex-wrap:wrap">
+                            <div class="form-group" style="flex:1;min-width:160px"><label
+                                    class="form-label">Rooms</label><select class="form-select">
+                                    <option>1 Room</option>
+                                    <option>2 Rooms</option>
+                                    <option>3+ Rooms</option>
+                                </select></div>
+                            <div class="form-group" style="flex:1;min-width:160px"><label class="form-label">Star
+                                    Rating</label><select class="form-select">
+                                    <option>Any</option>
+                                    <option>3 Star</option>
+                                    <option>4 Star</option>
+                                    <option>5 Star</option>
+                                </select></div>
+                            <div class="form-group" style="flex:1;min-width:160px"><label class="form-label">Board
+                                    Basis</label><select class="form-select">
+                                    <option>Room Only</option>
+                                    <option>Breakfast Included</option>
+                                    <option>All Inclusive</option>
+                                </select></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- COMBO PANEL -->
+                <div class="booking-panel" id="panel-combo">
+                    <div class="search-box reveal" style="text-align:center;padding:3rem">
+                        <div style="font-size:3rem;margin-bottom:1rem">🎯</div>
+                        <h3 style="color:var(--white);margin-bottom:1rem">Flight + Hotel Combo</h3>
+                        <p style="max-width:480px;margin:0 auto 2rem">Save up to 25% when you book flights and hotels
+                            together. Let our experts build the perfect combo package.</p>
+                        <a href="tel:+919876543210" class="btn btn-primary" style="margin-right:1rem">📞 Call for Best
+                            Combo Rate</a>
+                        <a href="https://wa.me/919876543210" class="btn btn-outline" target="_blank">💬 WhatsApp Us</a>
+                    </div>
+                </div>
+
+                <!-- FEATURED FLIGHT DEALS -->
+                <div style="margin-top:5rem">
+                    <div class="section-header" style="text-align:left;margin-bottom:2rem">
+                        <p class="section-label">🔥 Limited Time Deals</p>
+                        <h2 class="section-title">Featured <span class="highlight italic">Flight Deals</span></h2>
+                    </div>
+                    <div class="grid-4">
+                        <div class="deal-card reveal">
+                            <div class="deal-card-img"><img
+                                    src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=400&q=80"
+                                    alt="Dubai"></div>
+                            <div class="deal-card-body">
+                                <div class="deal-route">Chennai → Dubai</div>
+                                <div class="deal-meta">
+                                    <div><span class="deal-tag">Round Trip · 5N</span>
+                                        <div class="deal-price">₹28,500</div>
+                                    </div><a href="#" class="btn btn-primary"
+                                        style="padding:0.5rem 1rem;font-size:0.8rem">Book</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="deal-card reveal delay-1">
+                            <div class="deal-card-img"><img
+                                    src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=400&q=80"
+                                    alt="Bali"></div>
+                            <div class="deal-card-body">
+                                <div class="deal-route">Chennai → Bali</div>
+                                <div class="deal-meta">
+                                    <div><span class="deal-tag">Round Trip · 7N</span>
+                                        <div class="deal-price">₹38,000</div>
+                                    </div><a href="#" class="btn btn-primary"
+                                        style="padding:0.5rem 1rem;font-size:0.8rem">Book</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="deal-card reveal delay-2">
+                            <div class="deal-card-img"><img
+                                    src="https://images.unsplash.com/photo-1519922639192-e73293ca430e?w=400&q=80"
+                                    alt="Singapore"></div>
+                            <div class="deal-card-body">
+                                <div class="deal-route">Chennai → Singapore</div>
+                                <div class="deal-meta">
+                                    <div><span class="deal-tag">Round Trip · 5N</span>
+                                        <div class="deal-price">₹32,000</div>
+                                    </div><a href="#" class="btn btn-primary"
+                                        style="padding:0.5rem 1rem;font-size:0.8rem">Book</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="deal-card reveal delay-3">
+                            <div class="deal-card-img"><img
+                                    src="https://images.unsplash.com/photo-1499856871958-5b9627545d1a?w=400&q=80"
+                                    alt="Paris"></div>
+                            <div class="deal-card-body">
+                                <div class="deal-route">Chennai → Paris</div>
+                                <div class="deal-meta">
+                                    <div><span class="deal-tag">Round Trip · 10N</span>
+                                        <div class="deal-price">₹85,000</div>
+                                    </div><a href="#" class="btn btn-primary"
+                                        style="padding:0.5rem 1rem;font-size:0.8rem">Book</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="margin-top:4rem;text-align:center" class="reveal">
+                    <div class="glass-card-sm" style="max-width:700px;margin:0 auto;text-align:center;padding:2.5rem">
+                        <div style="font-size:2.5rem;margin-bottom:0.75rem">📞</div>
+                        <h3 style="color:var(--white);margin-bottom:0.75rem">Can't find your route?</h3>
+                        <p style="margin-bottom:1.5rem">Our booking specialists can find the best routes and fares
+                            anywhere in the world.</p>
+                        <a href="tel:+919876543210" class="btn btn-primary">Call +91 98765 43210</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="components.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

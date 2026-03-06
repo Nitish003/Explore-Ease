@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Read genuine customer reviews and testimonials about Explore Easy Tours & Travels. 5-star rated travel agency in Tamil Nadu.">
+    <title>Customer Reviews | Explore Easy Tours & Travels</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .rating-bar {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .bar-label {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            width: 30px;
+        }
+
+        .bar-track {
+            flex: 1;
+            height: 8px;
+            background: rgba(255, 255, 255, 0.08);
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .bar-fill {
+            height: 100%;
+            background: linear-gradient(90deg, var(--gold-dark), var(--gold-light));
+            border-radius: 4px;
+        }
+
+        .bar-count {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            width: 35px;
+            text-align: right;
+        }
+
+        .overall-score {
+            font-family: var(--font-serif);
+            font-size: 5rem;
+            font-weight: 900;
+            color: var(--gold);
+            line-height: 1;
+        }
+
+        .review-page-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+        }
+
+        @media(max-width:768px) {
+            .review-page-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <section class="page-hero" style="min-height:50vh">
+            <div class="page-hero-bg"
+                style="background-image:url('https://images.unsplash.com/photo-1530789253388-582c481c54b0?w=1920&q=80');opacity:0.3">
+            </div>
+            <div class="page-hero-overlay"></div>
+            <div class="container">
+                <div class="page-hero-content">
+                    <div class="breadcrumb"><a href="index.html">Home</a><span>/</span><span>Reviews</span></div>
+                    <p class="section-label">💬 Real Stories</p>
+                    <h1>Customer <span class="highlight italic">Reviews</span></h1>
+                    <p style="max-width:500px;margin-top:1rem;color:var(--white-60)">Over 50,000 happy travellers.
+                        Here's what they say about us.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <!-- Overall Rating -->
+                <div class="glass-card-sm reveal"
+                    style="display:flex;gap:3rem;align-items:center;flex-wrap:wrap;max-width:700px;margin-bottom:4rem;padding:2.5rem">
+                    <div style="text-align:center;flex-shrink:0">
+                        <div class="overall-score">4.9</div>
+                        <div style="color:var(--gold);font-size:1.2rem;margin:0.25rem 0">★★★★★</div>
+                        <div style="font-size:0.8rem;color:var(--text-muted)">Based on 3,240+ Reviews</div>
+                    </div>
+                    <div style="flex:1;min-width:200px">
+                        <div class="rating-bar"><span class="bar-label">5★</span>
+                            <div class="bar-track">
+                                <div class="bar-fill" style="width:82%"></div>
+                            </div><span class="bar-count">2,650</span>
+                        </div>
+                        <div class="rating-bar"><span class="bar-label">4★</span>
+                            <div class="bar-track">
+                                <div class="bar-fill" style="width:13%"></div>
+                            </div><span class="bar-count">425</span>
+                        </div>
+                        <div class="rating-bar"><span class="bar-label">3★</span>
+                            <div class="bar-track">
+                                <div class="bar-fill" style="width:3%"></div>
+                            </div><span class="bar-count">110</span>
+                        </div>
+                        <div class="rating-bar"><span class="bar-label">2★</span>
+                            <div class="bar-track">
+                                <div class="bar-fill" style="width:1%"></div>
+                            </div><span class="bar-count">35</span>
+                        </div>
+                        <div class="rating-bar"><span class="bar-label">1★</span>
+                            <div class="bar-track">
+                                <div class="bar-fill" style="width:0.5%"></div>
+                            </div><span class="bar-count">20</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Reviews Grid -->
+                <div class="review-page-grid">
+                    <div class="review-card reveal">
+                        <div class="stars">★★★★★</div>
+                        <p class="review-text">"Maldives honeymoon trip was beyond perfect. The overwater villa, the
+                            sunset cruise, everything was arranged to the last detail. We felt like royalty. Explore
+                            Easy is simply the best!"</p>
+                        <div class="reviewer">
+                            <div class="reviewer-avatar"
+                                style="background:linear-gradient(135deg,#D4AF37,#A8860A);display:flex;align-items:center;justify-content:center;color:var(--navy);font-weight:700">
+                                AK</div>
+                            <div>
+                                <div class="reviewer-name">Anitha & Karthik</div>
+                                <div class="reviewer-trip">Maldives Honeymoon · December 2024</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-card reveal delay-1">
+                        <div class="stars">★★★★★</div>
+                        <p class="review-text">"Europe tour in 12 days was a dream come true! Paris, Rome, Amsterdam,
+                            Switzerland — everything was seamless. The local guides were knowledgeable and Mr. Ramesh
+                            checked on us every day!"</p>
+                        <div class="reviewer">
+                            <div class="reviewer-avatar"
+                                style="background:linear-gradient(135deg,#1ABCB0,#0A8C82);display:flex;align-items:center;justify-content:center;color:white;font-weight:700">
+                                SB</div>
+                            <div>
+                                <div class="reviewer-name">Suresh Babu Family</div>
+                                <div class="reviewer-trip">Europe Grand Tour · October 2024</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-card reveal">
+                        <div class="stars">★★★★★</div>
+                        <p class="review-text">"As a professor organising a student industrial visit for 80+ students, I
+                            was nervous. But Explore Easy handled everything — buses, hotels, site visits — with zero
+                            issues. Highly recommended!"</p>
+                        <div class="reviewer">
+                            <div class="reviewer-avatar"
+                                style="background:linear-gradient(135deg,#E8507A,#C03060);display:flex;align-items:center;justify-content:center;color:white;font-weight:700">
+                                PR</div>
+                            <div>
+                                <div class="reviewer-name">Prof. Priya Rajan</div>
+                                <div class="reviewer-trip">Student IV Package · 80 Students</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-card reveal delay-1">
+                        <div class="stars">★★★★★</div>
+                        <p class="review-text">"Our Rajasthan heritage tour was spectacular! Majestic forts, colourful
+                            markets, delicious food and smooth logistics. The travel agent was available on WhatsApp
+                            24/7. Truly world-class service."</p>
+                        <div class="reviewer">
+                            <div class="reviewer-avatar"
+                                style="background:linear-gradient(135deg,#8B5CF6,#6D28D9);display:flex;align-items:center;justify-content:center;color:white;font-weight:700">
+                                VM</div>
+                            <div>
+                                <div class="reviewer-name">Vijay & Meena M.</div>
+                                <div class="reviewer-trip">Royal Rajasthan Tour · September 2024</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-card reveal">
+                        <div class="stars">★★★★★</div>
+                        <p class="review-text">"We went on the Kenya safari — the wildebeest migration was unreal! All
+                            arrangements were perfect. The safari jeep, lodge, everything top-notch. Worth every penny
+                            and then some!"</p>
+                        <div class="reviewer">
+                            <div class="reviewer-avatar"
+                                style="background:linear-gradient(135deg,#2EA05C,#1A6B3A);display:flex;align-items:center;justify-content:center;color:white;font-weight:700">
+                                RN</div>
+                            <div>
+                                <div class="reviewer-name">Ramesh N.</div>
+                                <div class="reviewer-trip">Kenya Safari · August 2024</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-card reveal delay-1">
+                        <div class="stars">★★★★☆</div>
+                        <p class="review-text">"Bali trip was amazing! Beautiful places, helpful guide, clean hotel. The
+                            only minor issue was a slight delay at one pick-up point but the team immediately arranged
+                            an alternative. Good recovery!"</p>
+                        <div class="reviewer">
+                            <div class="reviewer-avatar"
+                                style="background:linear-gradient(135deg,#F59E0B,#D97706);display:flex;align-items:center;justify-content:center;color:white;font-weight:700">
+                                DK</div>
+                            <div>
+                                <div class="reviewer-name">Deepika K.</div>
+                                <div class="reviewer-trip">Bali 7-Day Tour · July 2024</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Write Review CTA -->
+                <div class="contact-bar reveal" style="margin-top:4rem;flex-direction:column;text-align:center">
+                    <h3 style="color:var(--white)">Travelled with us? Share Your Experience!</h3>
+                    <p>Your review helps other travellers make the right choice. We'd love to hear from you.</p>
+                    <div style="display:flex;gap:1rem;flex-wrap:wrap;justify-content:center;margin-top:1rem">
+                        <a href="https://g.page/r/" target="_blank" class="btn btn-primary">⭐ Write a Google Review</a>
+                        <a href="https://wa.me/919876543210" target="_blank" class="btn btn-outline">💬 Share on
+                            WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="components.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

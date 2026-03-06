@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Honeymoon and romantic getaway packages by Explore Easy Tours & Travels. Maldives, Bali, Paris, Switzerland and more — beautifully arranged for couples.">
+    <title>Honeymoon & Romantic Getaways | Explore Easy Tours & Travels</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        :root {
+            --accent-rose: #E8507A;
+        }
+
+        .honeymoon-hero {
+            background: linear-gradient(135deg, #1A0510, #240A18, #0A0E1A);
+        }
+
+        .romance-badge {
+            background: rgba(232, 80, 122, 0.12);
+            border: 1px solid var(--accent-rose);
+            color: var(--accent-rose);
+        }
+
+        .section-title .highlight.rose {
+            color: var(--accent-rose);
+        }
+
+        .hm-card {
+            position: relative;
+            border-radius: var(--radius-xl);
+            overflow: hidden;
+            aspect-ratio: 4/5;
+            cursor: pointer;
+        }
+
+        .hm-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s;
+        }
+
+        .hm-card:hover img {
+            transform: scale(1.08);
+        }
+
+        .hm-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(24, 4, 12, 0.9) 0%, rgba(0, 0, 0, 0.3) 60%, transparent 100%);
+        }
+
+        .hm-content {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 1.75rem;
+        }
+
+        .hm-tag {
+            display: inline-block;
+            background: var(--accent-rose);
+            color: white;
+            font-size: 0.65rem;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            margin-bottom: 0.5rem;
+        }
+
+        .hm-title {
+            font-family: var(--font-serif);
+            font-size: 1.4rem;
+            color: var(--white);
+            font-style: italic;
+        }
+
+        .hm-price {
+            margin-top: 0.5rem;
+            color: var(--gold-light);
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        .why-romantic {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+        }
+
+        @media(max-width:768px) {
+            .why-romantic {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .romantic-feat {
+            text-align: center;
+            padding: 2rem;
+            background: var(--navy-card);
+            border: 1px solid rgba(232, 80, 122, 0.2);
+            border-radius: var(--radius-lg);
+            transition: var(--transition);
+        }
+
+        .romantic-feat:hover {
+            border-color: var(--accent-rose);
+            transform: translateY(-5px);
+        }
+
+        .romantic-feat .feat-icon {
+            font-size: 2.5rem;
+            margin-bottom: 0.75rem;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <section class="page-hero honeymoon-hero">
+            <div class="page-hero-bg"
+                style="background-image:url('https://images.unsplash.com/photo-1573843981267-be1999ff37cd?w=1920&q=80');opacity:0.4">
+            </div>
+            <div class="page-hero-overlay"
+                style="background:linear-gradient(to top,#1A0510,rgba(26,5,16,0.5),rgba(10,14,26,0.2))"></div>
+            <div class="container">
+                <div class="page-hero-content">
+                    <div class="breadcrumb"><a href="index.html">Home</a><span>/</span><span>Honeymoon</span></div>
+                    <p class="section-label" style="color:var(--accent-rose)">💑 Romance & Love</p>
+                    <h1>Honeymoon & <span class="italic" style="color:var(--accent-rose)">Romantic</span> Getaways</h1>
+                    <p style="max-width:520px;margin-top:1rem;color:var(--white-60)">Your love story deserves the
+                        world's most beautiful destinations. Let us create the perfect chapter.</p>
+                    <div style="margin-top:2rem;display:flex;gap:1rem;flex-wrap:wrap">
+                        <a href="tel:+919876543210" class="btn btn-primary"
+                            style="background:linear-gradient(135deg,var(--accent-rose),#C03060)">💑 Plan Our
+                            Honeymoon</a>
+                        <a href="#packages" class="btn btn-outline"
+                            style="border-color:var(--accent-rose);color:var(--accent-rose)">View Packages</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="packages">
+            <div class="container">
+                <div class="section-header">
+                    <p class="section-label" style="color:var(--accent-rose)">💕 Top Romantic Destinations</p>
+                    <h2 class="section-title reveal">Honeymoon <span class="highlight italic">Packages</span></h2>
+                    <div class="divider" style="background:linear-gradient(90deg,var(--accent-rose),#F8A0C0)"></div>
+                </div>
+                <div class="grid-3" style="gap:1.5rem">
+                    <div class="hm-card reveal">
+                        <img src="https://images.unsplash.com/photo-1573843981267-be1999ff37cd?w=600&q=80"
+                            alt="Maldives">
+                        <div class="hm-overlay"></div>
+                        <div class="hm-content">
+                            <span class="hm-tag">#1 Honeymoon Destination</span>
+                            <div class="hm-title">Maldives Overwater Bliss</div>
+                            <div class="hm-price">From ₹85,000/couple · 6 Nights</div>
+                            <a href="booking.html" class="btn btn-primary"
+                                style="margin-top:0.75rem;padding:0.5rem 1.25rem;font-size:0.82rem;background:linear-gradient(135deg,var(--accent-rose),#C03060)">Book
+                                Now</a>
+                        </div>
+                    </div>
+                    <div class="hm-card reveal delay-1">
+                        <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=600&q=80" alt="Bali">
+                        <div class="hm-overlay"></div>
+                        <div class="hm-content">
+                            <span class="hm-tag">Tropical Romance</span>
+                            <div class="hm-title">Bali — Island of Love</div>
+                            <div class="hm-price">From ₹95,000/couple · 7 Nights</div>
+                            <a href="booking.html" class="btn btn-primary"
+                                style="margin-top:0.75rem;padding:0.5rem 1.25rem;font-size:0.82rem;background:linear-gradient(135deg,var(--accent-rose),#C03060)">Book
+                                Now</a>
+                        </div>
+                    </div>
+                    <div class="hm-card reveal delay-2">
+                        <img src="https://images.unsplash.com/photo-1499856871958-5b9627545d1a?w=600&q=80" alt="Paris">
+                        <div class="hm-overlay"></div>
+                        <div class="hm-content">
+                            <span class="hm-tag">Most Romantic City</span>
+                            <div class="hm-title">Paris — City of Love</div>
+                            <div class="hm-price">From ₹1,75,000/couple · 8 Nights</div>
+                            <a href="booking.html" class="btn btn-primary"
+                                style="margin-top:0.75rem;padding:0.5rem 1.25rem;font-size:0.82rem;background:linear-gradient(135deg,var(--accent-rose),#C03060)">Book
+                                Now</a>
+                        </div>
+                    </div>
+                    <div class="hm-card reveal">
+                        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80"
+                            alt="Switzerland">
+                        <div class="hm-overlay"></div>
+                        <div class="hm-content">
+                            <span class="hm-tag">Alpine Romance</span>
+                            <div class="hm-title">Switzerland — Snow & Love</div>
+                            <div class="hm-price">From ₹2,20,000/couple · 9 Nights</div>
+                            <a href="booking.html" class="btn btn-primary"
+                                style="margin-top:0.75rem;padding:0.5rem 1.25rem;font-size:0.82rem;background:linear-gradient(135deg,var(--accent-rose),#C03060)">Book
+                                Now</a>
+                        </div>
+                    </div>
+                    <div class="hm-card reveal delay-1">
+                        <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=600&q=80"
+                            alt="Seychelles">
+                        <div class="hm-overlay"></div>
+                        <div class="hm-content">
+                            <span class="hm-tag">Hidden Paradise</span>
+                            <div class="hm-title">Seychelles — Secret Eden</div>
+                            <div class="hm-price">From ₹1,60,000/couple · 8 Nights</div>
+                            <a href="booking.html" class="btn btn-primary"
+                                style="margin-top:0.75rem;padding:0.5rem 1.25rem;font-size:0.82rem;background:linear-gradient(135deg,var(--accent-rose),#C03060)">Book
+                                Now</a>
+                        </div>
+                    </div>
+                    <div class="hm-card reveal delay-2">
+                        <img src="https://images.unsplash.com/photo-1526481280693-3bfa7568e0f3?w=600&q=80" alt="Kerala">
+                        <div class="hm-overlay"></div>
+                        <div class="hm-content">
+                            <span class="hm-tag">Budget Romantic</span>
+                            <div class="hm-title">Kerala — God's Own Country</div>
+                            <div class="hm-price">From ₹32,000/couple · 5 Nights</div>
+                            <a href="booking.html" class="btn btn-primary"
+                                style="margin-top:0.75rem;padding:0.5rem 1.25rem;font-size:0.82rem;background:linear-gradient(135deg,var(--accent-rose),#C03060)">Book
+                                Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" style="background:var(--navy-mid)">
+            <div class="container">
+                <div class="section-header">
+                    <p class="section-label">💝 The Explore Easy Promise</p>
+                    <h2 class="section-title reveal">Your <span class="italic"
+                            style="color:var(--accent-rose)">Romance</span> is Our Priority</h2>
+                    <div class="divider" style="background:linear-gradient(90deg,var(--accent-rose),#F8A0C0)"></div>
+                </div>
+                <div class="why-romantic">
+                    <div class="romantic-feat reveal">
+                        <div class="feat-icon">🌹</div>
+                        <h4 style="color:var(--white);margin-bottom:0.5rem">Rose Petal Room Decor</h4>
+                        <p style="font-size:0.87rem">Complimentary rose petal and candle setup in your room on arrival.
+                        </p>
+                    </div>
+                    <div class="romantic-feat reveal delay-1">
+                        <div class="feat-icon">🍷</div>
+                        <h4 style="color:var(--white);margin-bottom:0.5rem">Private Candlelit Dinner</h4>
+                        <p style="font-size:0.87rem">Exclusive beachside or rooftop candlelit dinners arranged just for
+                            the two of you.</p>
+                    </div>
+                    <div class="romantic-feat reveal delay-2">
+                        <div class="feat-icon">🧴</div>
+                        <h4 style="color:var(--white);margin-bottom:0.5rem">Couple's Spa Session</h4>
+                        <p style="font-size:0.87rem">Rejuvenating couple's spa and massage sessions at premium resort
+                            spas.</p>
+                    </div>
+                    <div class="romantic-feat reveal">
+                        <div class="feat-icon">📸</div>
+                        <h4 style="color:var(--white);margin-bottom:0.5rem">Professional Photoshoot</h4>
+                        <p style="font-size:0.87rem">A surprise professional photo session at iconic locations —
+                            priceless memories.</p>
+                    </div>
+                    <div class="romantic-feat reveal delay-1">
+                        <div class="feat-icon">🛥</div>
+                        <h4 style="color:var(--white);margin-bottom:0.5rem">Sunset Cruise</h4>
+                        <p style="font-size:0.87rem">Private sunset cruise with champagne, music and the most
+                            breathtaking views.</p>
+                    </div>
+                    <div class="romantic-feat reveal delay-2">
+                        <div class="feat-icon">🎂</div>
+                        <h4 style="color:var(--white);margin-bottom:0.5rem">Surprise Celebrations</h4>
+                        <p style="font-size:0.87rem">Birthday, anniversary surprises — just let us know and we'll
+                            arrange it perfectly.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="components.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Student Industrial Visit (IV) packages by Explore Easy Tours & Travels. Educational tours for schools and colleges across India and abroad.">
+    <title>Student IV Packages | Explore Easy Tours & Travels</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .student-card {
+            background: var(--navy-card);
+            border: 1px solid var(--border-glass);
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            transition: var(--transition);
+        }
+
+        .student-card:hover {
+            border-color: var(--accent-teal);
+            transform: translateY(-5px);
+            box-shadow: 0 8px 36px rgba(26, 188, 176, 0.2);
+        }
+
+        .student-img {
+            height: 200px;
+            overflow: hidden;
+        }
+
+        .student-img img {
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s;
+        }
+
+        .student-card:hover .student-img img {
+            transform: scale(1.05);
+        }
+
+        .student-pill {
+            display: inline-block;
+            background: rgba(26, 188, 176, 0.12);
+            border: 1px solid var(--accent-teal);
+            color: var(--accent-teal);
+            font-size: 0.65rem;
+            padding: 0.2rem 0.65rem;
+            border-radius: 20px;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+        }
+
+        .incl-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+        }
+
+        @media(max-width:768px) {
+            .incl-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        .incl-item {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 1rem;
+            background: var(--navy-card);
+            border: 1px solid var(--border-glass);
+            border-radius: var(--radius-md);
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+        }
+
+        .incl-item span:first-child {
+            font-size: 1.4rem;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <section class="page-hero" style="min-height:50vh">
+            <div class="page-hero-bg"
+                style="background-image:url('https://images.unsplash.com/photo-1523580494863-6f3031224c94?w=1920&q=80');opacity:0.35">
+            </div>
+            <div class="page-hero-overlay"></div>
+            <div class="container">
+                <div class="page-hero-content">
+                    <div class="breadcrumb"><a href="index.html">Home</a><span>/</span><span>Student IV</span></div>
+                    <p class="section-label" style="color:var(--accent-teal)">🎓 Educational Travel</p>
+                    <h1>Student IV <span class="italic" style="color:var(--accent-teal)">Packages</span></h1>
+                    <p style="max-width:520px;margin-top:1rem;color:var(--white-60)">Industrial visits and educational
+                        tours for schools and colleges. Learning beyond the classroom.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="section-header">
+                    <p class="section-label" style="color:var(--accent-teal)">📚 Educational Trips</p>
+                    <h2 class="section-title reveal">Popular <span class="italic" style="color:var(--accent-teal)">IV
+                            Routes</span></h2>
+                    <div class="divider" style="background:linear-gradient(90deg,var(--accent-teal),#60E0D8)"></div>
+                </div>
+                <div class="grid-3">
+                    <div class="student-card reveal">
+                        <div class="student-img"><img
+                                src="https://images.unsplash.com/photo-1545569341-9eb8b30979d9?w=600&q=80"
+                                alt="Bangalore Tech Parks"></div>
+                        <div style="padding:1.5rem">
+                            <span class="student-pill">Tech & Innovation</span>
+                            <h3 style="color:var(--white);margin:0.75rem 0 0.4rem;font-size:1.15rem">Bangalore IT &
+                                Science IV</h3>
+                            <p style="font-size:0.85rem">ISRO Space Centre, HAL Aerospace Museum, IT tech parks,
+                                NIMHANS, Science Museum. Ideal for Engineering, Science students.</p>
+                            <div
+                                style="margin-top:1rem;display:flex;justify-content:space-between;align-items:center;border-top:1px solid var(--border-glass);padding-top:1rem">
+                                <div><span style="color:var(--text-muted);font-size:0.75rem">From</span>
+                                    <div style="color:var(--gold);font-family:var(--font-serif);font-size:1.4rem">
+                                        ₹5,500<span style="font-size:0.75rem;color:var(--text-muted)">/person</span>
+                                    </div>
+                                </div>
+                                <a href="tel:+919876543210" class="btn btn-outline"
+                                    style="border-color:var(--accent-teal);color:var(--accent-teal);padding:0.5rem 1rem;font-size:0.82rem">Enquire</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="student-card reveal delay-1">
+                        <div class="student-img"><img
+                                src="https://images.unsplash.com/photo-1569974507005-6dc61f97fb5c?w=600&q=80"
+                                alt="Chennai Industry"></div>
+                        <div style="padding:1.5rem">
+                            <span class="student-pill">Industry Visit</span>
+                            <h3 style="color:var(--white);margin:0.75rem 0 0.4rem;font-size:1.15rem">Chennai Industrial
+                                Tour</h3>
+                            <p style="font-size:0.85rem">Manufacturing units, automobile factories, Chennai Port Trust,
+                                TIDCO plants. Ideal for Management, Engineering, Commerce.</p>
+                            <div
+                                style="margin-top:1rem;display:flex;justify-content:space-between;align-items:center;border-top:1px solid var(--border-glass);padding-top:1rem">
+                                <div><span style="color:var(--text-muted);font-size:0.75rem">From</span>
+                                    <div style="color:var(--gold);font-family:var(--font-serif);font-size:1.4rem">
+                                        ₹2,800<span style="font-size:0.75rem;color:var(--text-muted)">/person</span>
+                                    </div>
+                                </div>
+                                <a href="tel:+919876543210" class="btn btn-outline"
+                                    style="border-color:var(--accent-teal);color:var(--accent-teal);padding:0.5rem 1rem;font-size:0.82rem">Enquire</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="student-card reveal delay-2">
+                        <div class="student-img"><img
+                                src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=600&q=80"
+                                alt="Delhi Historical"></div>
+                        <div style="padding:1.5rem">
+                            <span class="student-pill">Heritage & History</span>
+                            <h3 style="color:var(--white);margin:0.75rem 0 0.4rem;font-size:1.15rem">Delhi-Agra Heritage
+                                IV</h3>
+                            <p style="font-size:0.85rem">India Gate, Parliament, Red Fort, Taj Mahal, Qutub Minar,
+                                National Museum. Ideal for History, Civics & Social Science.</p>
+                            <div
+                                style="margin-top:1rem;display:flex;justify-content:space-between;align-items:center;border-top:1px solid var(--border-glass);padding-top:1rem">
+                                <div><span style="color:var(--text-muted);font-size:0.75rem">From</span>
+                                    <div style="color:var(--gold);font-family:var(--font-serif);font-size:1.4rem">
+                                        ₹9,500<span style="font-size:0.75rem;color:var(--text-muted)">/person</span>
+                                    </div>
+                                </div>
+                                <a href="tel:+919876543210" class="btn btn-outline"
+                                    style="border-color:var(--accent-teal);color:var(--accent-teal);padding:0.5rem 1rem;font-size:0.82rem">Enquire</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="margin-top:5rem">
+                    <div class="section-header" style="text-align:left">
+                        <p class="section-label">📋 What's Included</p>
+                        <h2 class="section-title reveal" style="font-size:2rem">All IV Packages <span
+                                class="highlight italic">Include</span></h2>
+                    </div>
+                    <div class="incl-grid">
+                        <div class="incl-item reveal"><span>🚌</span><span>AC Luxury Bus (Door-to-Door)</span></div>
+                        <div class="incl-item reveal delay-1"><span>🏨</span><span>Hotels / Dormitory
+                                Accommodation</span></div>
+                        <div class="incl-item reveal delay-2"><span>🍱</span><span>Vegetarian Meals Included</span>
+                        </div>
+                        <div class="incl-item reveal"><span>🎫</span><span>Entry Tickets to All Sites</span></div>
+                        <div class="incl-item reveal delay-1"><span>👨‍🏫</span><span>Qualified Tour Guide /
+                                Escort</span></div>
+                        <div class="incl-item reveal delay-2"><span>🧯</span><span>First Aid & Medical Kit</span></div>
+                        <div class="incl-item reveal"><span>🛡</span><span>Student Travel Insurance</span></div>
+                        <div class="incl-item reveal delay-1"><span>📝</span><span>Tour Report / Certificate</span>
+                        </div>
+                        <div class="incl-item reveal delay-2"><span>📸</span><span>Group Photography</span></div>
+                    </div>
+                </div>
+
+                <div class="contact-bar reveal" style="margin-top:4rem">
+                    <div>
+                        <h3 style="color:var(--white)">Schedule an IV for Your <span
+                                style="color:var(--accent-teal)">Institution?</span></h3>
+                        <p>We work with 200+ colleges and schools across Tamil Nadu. Let's plan yours!</p>
+                    </div>
+                    <div style="display:flex;gap:1rem;flex-wrap:wrap">
+                        <a href="tel:+919876543210" class="btn btn-primary">📞 Call Now</a>
+                        <a href="mailto:iv@exploreeasy.in" class="btn btn-outline">✉ Email Us</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="components.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="24/7 Emergency Travel Support by Explore Easy Tours & Travels. Immediate assistance for medical, flight, lost documents and crisis situations abroad.">
+    <title>Emergency Travel Support | Explore Easy Tours & Travels</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        :root {
+            --sos: #E63946;
+        }
+
+        .sos-banner {
+            background: linear-gradient(135deg, rgba(230, 57, 70, 0.15), rgba(230, 57, 70, 0.05));
+            border: 1px solid rgba(230, 57, 70, 0.35);
+            border-radius: var(--radius-xl);
+            padding: 2.5rem;
+            text-align: center;
+            animation: pulse-border 2s infinite;
+        }
+
+        @keyframes pulse-border {
+
+            0%,
+            100% {
+                box-shadow: 0 0 0 0 rgba(230, 57, 70, 0.3);
+            }
+
+            50% {
+                box-shadow: 0 0 0 12px rgba(230, 57, 70, 0);
+            }
+        }
+
+        .sos-number {
+            font-family: var(--font-serif);
+            font-size: 3.5rem;
+            font-weight: 900;
+            color: var(--sos);
+            letter-spacing: 0.02em;
+            text-decoration: none;
+            display: block;
+            margin: 1rem 0;
+            transition: var(--transition);
+        }
+
+        .sos-number:hover {
+            transform: scale(1.04);
+        }
+
+        .emer-card {
+            background: var(--navy-card);
+            border: 1px solid var(--border-glass);
+            border-radius: var(--radius-lg);
+            padding: 2rem;
+            transition: var(--transition);
+        }
+
+        .emer-card:hover {
+            border-color: var(--sos);
+            transform: translateY(-4px);
+            box-shadow: 0 8px 30px rgba(230, 57, 70, 0.18);
+        }
+
+        .emer-icon {
+            font-size: 2.5rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .emer-title {
+            font-family: var(--font-serif);
+            font-size: 1.1rem;
+            color: var(--white);
+            margin-bottom: 0.5rem;
+        }
+
+        .step-line {
+            display: flex;
+            align-items: flex-start;
+            gap: 1.25rem;
+            padding: 1.25rem;
+        }
+
+        .step-bullet {
+            flex-shrink: 0;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background: rgba(230, 57, 70, 0.12);
+            border: 1px solid var(--sos);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 0.85rem;
+            color: var(--sos);
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <section class="page-hero" style="min-height:55vh;background:linear-gradient(135deg,#1A0306,#200308,#0A0E1A)">
+            <div class="page-hero-bg"
+                style="background-image:url('https://images.unsplash.com/photo-1484863137850-59afcfe05386?w=1920&q=80');opacity:0.25">
+            </div>
+            <div class="page-hero-overlay"></div>
+            <div class="container">
+                <div class="page-hero-content">
+                    <div class="breadcrumb"><a href="index.html">Home</a><span>/</span><span>Emergency Support</span>
+                    </div>
+                    <p class="section-label" style="color:var(--sos)">🆘 We're Always Here</p>
+                    <h1>Emergency <span class="italic" style="color:var(--sos)">Travel Support</span></h1>
+                    <p style="max-width:550px;margin-top:1rem;color:var(--white-60)">Even the best-planned trips can
+                        face unexpected situations. Our emergency team is available 24/7, 365 days a year.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <!-- SOS Banner -->
+                <div class="sos-banner reveal" style="max-width:600px;margin:0 auto 4rem">
+                    <p style="color:var(--text-muted);font-size:0.85rem;text-transform:uppercase;letter-spacing:0.12em">
+                        🆘 24/7 Emergency Helpline</p>
+                    <a href="tel:+919876543210" class="sos-number">+91 98765 43210</a>
+                    <p style="font-size:0.85rem;color:var(--text-muted)">Available round the clock for clients
+                        travelling with us</p>
+                    <div style="display:flex;gap:1rem;justify-content:center;margin-top:1.5rem;flex-wrap:wrap">
+                        <a href="tel:+919876543210" class="btn btn-primary"
+                            style="background:linear-gradient(135deg,var(--sos),#B22230)">📞 Call Now</a>
+                        <a href="https://wa.me/919876543210?text=EMERGENCY%3A%20I%20need%20help" target="_blank"
+                            class="btn btn-outline" style="border-color:var(--sos);color:var(--sos)">💬 WhatsApp SOS</a>
+                    </div>
+                </div>
+
+                <div class="section-header">
+                    <p class="section-label" style="color:var(--sos)">🚨 Emergency Scenarios</p>
+                    <h2 class="section-title reveal">How We <span class="italic" style="color:var(--sos)">Help</span>
+                    </h2>
+                    <div class="divider" style="background:linear-gradient(90deg,var(--sos),#FF8080)"></div>
+                </div>
+                <div class="grid-3">
+                    <div class="emer-card reveal">
+                        <div class="emer-icon">🏥</div>
+                        <div class="emer-title">Medical Emergency</div>
+                        <p style="font-size:0.87rem">Immediate hospital referral, medical bill assistance and insurance
+                            claim coordination. We stay with you.</p>
+                    </div>
+                    <div class="emer-card reveal delay-1">
+                        <div class="emer-icon">🚫</div>
+                        <div class="emer-title">Lost / Stolen Documents</div>
+                        <p style="font-size:0.87rem">Emergency passport, lost FIR filing, embassy contact, emergency
+                            travel certificate assistance.</p>
+                    </div>
+                    <div class="emer-card reveal delay-2">
+                        <div class="emer-icon">✈</div>
+                        <div class="emer-title">Flight Miss or Cancellation</div>
+                        <p style="font-size:0.87rem">Immediate rebooking on next available flights, hotel accommodation
+                            for stranded passengers.</p>
+                    </div>
+                    <div class="emer-card reveal">
+                        <div class="emer-icon">💸</div>
+                        <div class="emer-title">Emergency Fund Transfer</div>
+                        <p style="font-size:0.87rem">Emergency cash assistance, Western Union coordination, and family
+                            contact on your behalf.</p>
+                    </div>
+                    <div class="emer-card reveal delay-1">
+                        <div class="emer-icon">🏠</div>
+                        <div class="emer-title">Emergency Accommodation</div>
+                        <p style="font-size:0.87rem">Last-minute hotel bookings at any destination if stranded due to
+                            natural disasters or flight changes.</p>
+                    </div>
+                    <div class="emer-card reveal delay-2">
+                        <div class="emer-icon">🌍</div>
+                        <div class="emer-title">Political / Natural Crisis</div>
+                        <p style="font-size:0.87rem">Evacuation coordination, embassy liaison, and repatriation
+                            arrangements in crisis situations.</p>
+                    </div>
+                </div>
+
+                <div style="margin-top:5rem">
+                    <div style="display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:start" class="reveal">
+                        <div>
+                            <p class="section-label">⚡ What To Do In An Emergency</p>
+                            <h3
+                                style="color:var(--white);font-family:var(--font-serif);font-size:1.8rem;margin:0.75rem 0">
+                                Step-by-Step <span style="color:var(--sos)">Action Plan</span></h3>
+                            <div
+                                style="border:1px solid var(--border-glass);border-radius:var(--radius-lg);overflow:hidden;margin-top:1.5rem">
+                                <div class="step-line"><span class="step-bullet">1</span>
+                                    <div><strong style="color:var(--white)">Stay Calm</strong><br><span
+                                            style="font-size:0.85rem">Take a breath. Most situations have solutions.
+                                            Panic makes it worse.</span></div>
+                                </div>
+                                <div style="border-top:1px solid var(--border-glass)"></div>
+                                <div class="step-line"><span class="step-bullet">2</span>
+                                    <div><strong style="color:var(--white)">Call Our Helpline</strong><br><span
+                                            style="font-size:0.85rem">+91 98765 43210 — 24/7 always reachable, anywhere
+                                            in the world.</span></div>
+                                </div>
+                                <div style="border-top:1px solid var(--border-glass)"></div>
+                                <div class="step-line"><span class="step-bullet">3</span>
+                                    <div><strong style="color:var(--white)">Contact Local Authorities</strong><br><span
+                                            style="font-size:0.85rem">Police, hospital, or embassy as appropriate. We'll
+                                            guide you on who to call.</span></div>
+                                </div>
+                                <div style="border-top:1px solid var(--border-glass)"></div>
+                                <div class="step-line"><span class="step-bullet">4</span>
+                                    <div><strong style="color:var(--white)">Document Everything</strong><br><span
+                                            style="font-size:0.85rem">Take photos, get FIR copies, save all medical
+                                            reports for insurance claims.</span></div>
+                                </div>
+                                <div style="border-top:1px solid var(--border-glass)"></div>
+                                <div class="step-line"><span class="step-bullet">5</span>
+                                    <div><strong style="color:var(--white)">Notify Your Family</strong><br><span
+                                            style="font-size:0.85rem">We can contact your family on your behalf if
+                                            you're unable to reach them.</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="section-label">📋 Emergency Contacts</p>
+                            <h3
+                                style="color:var(--white);font-family:var(--font-serif);font-size:1.8rem;margin:0.75rem 0">
+                                Useful <span style="color:var(--sos)">Numbers</span></h3>
+                            <div style="display:flex;flex-direction:column;gap:0.75rem;margin-top:1.5rem">
+                                <div class="emer-card"
+                                    style="padding:1rem 1.5rem;display:flex;justify-content:space-between;align-items:center">
+                                    <span style="color:var(--white)">Our 24/7 Helpline</span><a href="tel:+919876543210"
+                                        style="color:var(--sos);font-weight:700;font-size:1.05rem">+91 98765 43210</a>
+                                </div>
+                                <div class="emer-card"
+                                    style="padding:1rem 1.5rem;display:flex;justify-content:space-between;align-items:center">
+                                    <span style="color:var(--white)">India Embassy (Global)</span><a
+                                        href="tel:+911123010"
+                                        style="color:var(--gold-light);font-weight:700">+91-11-2301 0000</a></div>
+                                <div class="emer-card"
+                                    style="padding:1rem 1.5rem;display:flex;justify-content:space-between;align-items:center">
+                                    <span style="color:var(--white)">IATA Emergency</span><span
+                                        style="color:var(--text-muted)">Via airline directly</span></div>
+                                <div class="emer-card"
+                                    style="padding:1rem 1.5rem;display:flex;justify-content:space-between;align-items:center">
+                                    <span style="color:var(--white)">Tourism Helpline India</span><a
+                                        href="tel:1800111363"
+                                        style="color:var(--gold-light);font-weight:700">1800-11-1363</a></div>
+                                <div class="emer-card reveal"
+                                    style="padding:1rem 1.5rem;display:flex;justify-content:space-between;align-items:center">
+                                    <span style="color:var(--white)">Passport Seva Helpline</span><a
+                                        href="tel:18002581800"
+                                        style="color:var(--gold-light);font-weight:700">1800-258-1800</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="components.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

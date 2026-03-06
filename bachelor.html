@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Bachelor's special travel packages by Explore Easy Tours & Travels. Fun-packed trips for bachelor and bachelorette groups across India and abroad.">
+    <title>Bachelor's Special Packages | Explore Easy Tours & Travels</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        :root {
+            --bachelor-color: #7C3AED;
+        }
+
+        .bachelor-hero {
+            background: linear-gradient(135deg, #0D0820, #16082E, #0A0E1A);
+        }
+
+        .bach-card {
+            position: relative;
+            border-radius: var(--radius-xl);
+            overflow: hidden;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .bach-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 40px rgba(124, 58, 237, 0.35);
+        }
+
+        .bach-img {
+            height: 350px;
+            overflow: hidden;
+        }
+
+        .bach-img img {
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s;
+        }
+
+        .bach-card:hover .bach-img img {
+            transform: scale(1.08);
+        }
+
+        .bach-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(13, 8, 32, 0.92) 0%, rgba(0, 0, 0, 0.3) 55%, transparent 100%);
+        }
+
+        .bach-content {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 1.75rem;
+        }
+
+        .bach-tag {
+            display: inline-block;
+            background: var(--bachelor-color);
+            color: white;
+            font-size: 0.65rem;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            margin-bottom: 0.5rem;
+        }
+
+        .bach-title {
+            font-family: var(--font-serif);
+            font-size: 1.35rem;
+            color: var(--white);
+        }
+
+        .bach-price {
+            margin-top: 0.5rem;
+            color: var(--gold-light);
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        .vibe-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.25rem;
+        }
+
+        @media(max-width:768px) {
+            .vibe-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        .vibe-card {
+            text-align: center;
+            padding: 1.75rem 1rem;
+            background: rgba(124, 58, 237, 0.08);
+            border: 1px solid rgba(124, 58, 237, 0.2);
+            border-radius: var(--radius-lg);
+            transition: var(--transition);
+        }
+
+        .vibe-card:hover {
+            border-color: var(--bachelor-color);
+            transform: translateY(-4px);
+        }
+
+        .vibe-card .icon {
+            font-size: 2.5rem;
+            margin-bottom: 0.75rem;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <section class="page-hero bachelor-hero" style="background:linear-gradient(135deg,#0D0820,#16082E,#0A0E1A)">
+            <div class="page-hero-bg"
+                style="background-image:url('https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?w=1920&q=80');opacity:0.35">
+            </div>
+            <div class="page-hero-overlay"></div>
+            <div class="container">
+                <div class="page-hero-content">
+                    <div class="breadcrumb"><a href="index.html">Home</a><span>/</span><span>Bachelor's Special</span>
+                    </div>
+                    <p class="section-label" style="color:#A78BFA">🎉 For the Squad</p>
+                    <h1>Bachelor's <span class="italic" style="color:#A78BFA">Special</span> Packages</h1>
+                    <p style="max-width:520px;margin-top:1rem;color:var(--white-60)">Epic trips before the big day.
+                        Party, adventure, beach and city packages tailored for the ultimate bachelor squad.</p>
+                    <a href="tel:+919876543210" class="btn btn-primary"
+                        style="margin-top:2rem;background:linear-gradient(135deg,var(--bachelor-color),#5B21B6)">🎉 Plan
+                        the Trip</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="section-header">
+                    <p class="section-label" style="color:#A78BFA">🔥 Top Bachelor Trips</p>
+                    <h2 class="section-title reveal">Epic <span class="italic" style="color:#A78BFA">Destinations</span>
+                    </h2>
+                    <div class="divider" style="background:linear-gradient(90deg,var(--bachelor-color),#A78BFA)"></div>
+                </div>
+                <div class="grid-3">
+                    <div class="bach-card reveal">
+                        <div class="bach-img"><img
+                                src="https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?w=600&q=80" alt="Goa">
+                        </div>
+                        <div class="bach-overlay"></div>
+                        <div class="bach-content">
+                            <span class="bach-tag">#1 Bachelor Choice</span>
+                            <div class="bach-title">Goa — Sun, Sea & Party</div>
+                            <div class="bach-price">From ₹12,000/person · 4 Nights</div>
+                            <a href="booking.html" class="btn btn-primary"
+                                style="margin-top:0.75rem;padding:0.5rem 1.25rem;font-size:0.82rem;background:linear-gradient(135deg,var(--bachelor-color),#5B21B6)">Book
+                                Now</a>
+                        </div>
+                    </div>
+                    <div class="bach-card reveal delay-1">
+                        <div class="bach-img"><img
+                                src="https://images.unsplash.com/photo-1519922639192-e73293ca430e?w=600&q=80"
+                                alt="Singapore"></div>
+                        <div class="bach-overlay"></div>
+                        <div class="bach-content">
+                            <span class="bach-tag">International Party</span>
+                            <div class="bach-title">Singapore Night Life</div>
+                            <div class="bach-price">From ₹55,000/person · 5 Nights</div>
+                            <a href="booking.html" class="btn btn-primary"
+                                style="margin-top:0.75rem;padding:0.5rem 1.25rem;font-size:0.82rem;background:linear-gradient(135deg,var(--bachelor-color),#5B21B6)">Book
+                                Now</a>
+                        </div>
+                    </div>
+                    <div class="bach-card reveal delay-2">
+                        <div class="bach-img"><img
+                                src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=600&q=80"
+                                alt="Dubai"></div>
+                        <div class="bach-overlay"></div>
+                        <div class="bach-content">
+                            <span class="bach-tag">Luxury & Thrill</span>
+                            <div class="bach-title">Dubai VIP Experience</div>
+                            <div class="bach-price">From ₹72,000/person · 5 Nights</div>
+                            <a href="booking.html" class="btn btn-primary"
+                                style="margin-top:0.75rem;padding:0.5rem 1.25rem;font-size:0.82rem;background:linear-gradient(135deg,var(--bachelor-color),#5B21B6)">Book
+                                Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="margin-top:5rem">
+                    <div class="section-header">
+                        <p class="section-label">🎯 What Makes It Epic</p>
+                        <h2 class="section-title reveal" style="font-size:2rem">The <span class="italic"
+                                style="color:#A78BFA">Experience</span></h2>
+                        <div class="divider"></div>
+                    </div>
+                    <div class="vibe-grid">
+                        <div class="vibe-card reveal">
+                            <div class="icon">🎵</div>
+                            <h4 style="color:var(--white);margin-bottom:0.4rem">Club Access & Nightlife</h4>
+                            <p style="font-size:0.83rem">Priority entry to top clubs, pub crawls and beach parties
+                                arranged.</p>
+                        </div>
+                        <div class="vibe-card reveal delay-1">
+                            <div class="icon">🚤</div>
+                            <h4 style="color:var(--white);margin-bottom:0.4rem">Speed Boat Rides</h4>
+                            <p style="font-size:0.83rem">Adrenaline-pumping water sports, jet skiing and speed boat
+                                adventures.</p>
+                        </div>
+                        <div class="vibe-card reveal delay-2">
+                            <div class="icon">🍾</div>
+                            <h4 style="color:var(--white);margin-bottom:0.4rem">Private Pool Party</h4>
+                            <p style="font-size:0.83rem">Exclusive private pool party setup with DJ, decor and unlimited
+                                drinks.</p>
+                        </div>
+                        <div class="vibe-card reveal">
+                            <div class="icon">🏄</div>
+                            <h4 style="color:var(--white);margin-bottom:0.4rem">Adventure Sports</h4>
+                            <p style="font-size:0.83rem">Surfing, parasailing, bungee jumping and ATV off-road rides.
+                            </p>
+                        </div>
+                        <div class="vibe-card reveal delay-1">
+                            <div class="icon">🎯</div>
+                            <h4 style="color:var(--white);margin-bottom:0.4rem">Custom Theme Nights</h4>
+                            <p style="font-size:0.83rem">Themed party nights — fancy dress, glow, retro and beach
+                                themes.</p>
+                        </div>
+                        <div class="vibe-card reveal delay-2">
+                            <div class="icon">📸</div>
+                            <h4 style="color:var(--white);margin-bottom:0.4rem">Professional Filming</h4>
+                            <p style="font-size:0.83rem">A dedicated photographer and drone footage to capture legendary
+                                moments.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="components.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

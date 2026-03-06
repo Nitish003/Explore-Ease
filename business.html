@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Business travel services by Explore Easy Tours & Travels. Corporate travel management, MICE events, executive flights and hotel bookings.">
+    <title>Business Travel | Explore Easy Tours & Travels</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .biz-stat {
+            text-align: center;
+            padding: 2rem;
+            background: var(--navy-card);
+            border: 1px solid var(--border-glass);
+            border-radius: var(--radius-lg);
+            transition: var(--transition);
+        }
+
+        .biz-stat:hover {
+            border-color: var(--gold);
+        }
+
+        .biz-stat-num {
+            font-family: var(--font-serif);
+            font-size: 2.8rem;
+            font-weight: 900;
+            color: var(--gold);
+        }
+
+        .biz-stat-label {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin-top: 0.25rem;
+        }
+
+        .client-logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 80px;
+            background: var(--navy-card);
+            border: 1px solid var(--border-glass);
+            border-radius: var(--radius-md);
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            font-weight: 600;
+            transition: var(--transition);
+        }
+
+        .client-logo:hover {
+            border-color: var(--gold);
+            color: var(--white);
+        }
+
+        .biz-service {
+            display: flex;
+            gap: 1.5rem;
+            align-items: flex-start;
+            padding: 1.75rem;
+            background: var(--navy-card);
+            border: 1px solid var(--border-glass);
+            border-radius: var(--radius-lg);
+            transition: var(--transition);
+        }
+
+        .biz-service:hover {
+            border-color: var(--gold);
+        }
+
+        .biz-service-icon {
+            font-size: 2rem;
+            flex-shrink: 0;
+            background: rgba(212, 175, 55, 0.1);
+            width: 56px;
+            height: 56px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: var(--radius-sm);
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <section class="page-hero" style="min-height:55vh">
+            <div class="page-hero-bg"
+                style="background-image:url('https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=1920&q=80');opacity:0.3">
+            </div>
+            <div class="page-hero-overlay"></div>
+            <div class="container">
+                <div class="page-hero-content">
+                    <div class="breadcrumb"><a href="index.html">Home</a><span>/</span><span>Business Travel</span>
+                    </div>
+                    <p class="section-label">💼 Enterprise Solutions</p>
+                    <h1>Business <span class="highlight italic">Travel</span></h1>
+                    <p style="max-width:520px;margin-top:1rem;color:var(--white-60)">Seamless corporate travel
+                        management. From executive flights to large MICE events — we handle it all.</p>
+                    <a href="mailto:corporate@exploreeasy.in" class="btn btn-primary" style="margin-top:2rem">📧 Get
+                        Corporate Quote</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="grid-4">
+                    <div class="biz-stat reveal">
+                        <div class="biz-stat-num counter" data-target="350">0</div>
+                        <div class="biz-stat-label">Corporate Clients</div>
+                    </div>
+                    <div class="biz-stat reveal delay-1">
+                        <div class="biz-stat-num counter" data-target="5000">0</div>
+                        <div class="biz-stat-label">Business Trips / Year</div>
+                    </div>
+                    <div class="biz-stat reveal delay-2">
+                        <div class="biz-stat-num counter" data-target="40">0</div>
+                        <div class="biz-stat-label">Countries Covered</div>
+                    </div>
+                    <div class="biz-stat reveal delay-3">
+                        <div class="biz-stat-num counter" data-target="24">0</div>
+                        <div class="biz-stat-label">Hour Support</div>
+                    </div>
+                </div>
+
+                <div style="margin-top:5rem">
+                    <div class="section-header" style="text-align:left">
+                        <p class="section-label">🗂 Services</p>
+                        <h2 class="section-title reveal" style="font-size:2rem">Our Corporate <span
+                                class="highlight italic">Services</span></h2>
+                    </div>
+                    <div style="display:flex;flex-direction:column;gap:1.25rem;max-width:900px">
+                        <div class="biz-service reveal">
+                            <div class="biz-service-icon">✈</div>
+                            <div>
+                                <h4 style="color:var(--white);margin-bottom:0.4rem">Corporate Flight Bookings</h4>
+                                <p style="font-size:0.87rem">Preferred rates on Business Class, First Class, and Economy
+                                    for your entire team on all major airlines.</p>
+                            </div>
+                        </div>
+                        <div class="biz-service reveal delay-1">
+                            <div class="biz-service-icon">🏨</div>
+                            <div>
+                                <h4 style="color:var(--white);margin-bottom:0.4rem">Executive Hotel Accommodation</h4>
+                                <p style="font-size:0.87rem">Negotiated corporate rates at 5-star hotels globally. Early
+                                    check-in, late checkout, and priority rooms.</p>
+                            </div>
+                        </div>
+                        <div class="biz-service reveal delay-2">
+                            <div class="biz-service-icon">🎤</div>
+                            <div>
+                                <h4 style="color:var(--white);margin-bottom:0.4rem">MICE — Meetings, Incentives,
+                                    Conferences</h4>
+                                <p style="font-size:0.87rem">End-to-end planning for corporate conferences, product
+                                    launches, team offsites and incentive trips.</p>
+                            </div>
+                        </div>
+                        <div class="biz-service reveal">
+                            <div class="biz-service-icon">🚗</div>
+                            <div>
+                                <h4 style="color:var(--white);margin-bottom:0.4rem">Airport Transfers & Chauffeur
+                                    Service</h4>
+                                <p style="font-size:0.87rem">Luxury vehicle pick-up and drop for executives. Available
+                                    in 40+ cities worldwide.</p>
+                            </div>
+                        </div>
+                        <div class="biz-service reveal delay-1">
+                            <div class="biz-service-icon">📊</div>
+                            <div>
+                                <h4 style="color:var(--white);margin-bottom:0.4rem">Travel Policy & Expense Management
+                                </h4>
+                                <p style="font-size:0.87rem">Customised corporate travel policies, consolidated billing,
+                                    GST invoices and monthly travel reports.</p>
+                            </div>
+                        </div>
+                        <div class="biz-service reveal delay-2">
+                            <div class="biz-service-icon">🌐</div>
+                            <div>
+                                <h4 style="color:var(--white);margin-bottom:0.4rem">Visa & Travel Document Assistance
+                                </h4>
+                                <p style="font-size:0.87rem">Fast-track visa processing for business visas to USA, UK,
+                                    Schengen, Australia and more.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="margin-top:5rem">
+                    <div class="section-header" style="text-align:center">
+                        <p class="section-label">🏢 Trusted By</p>
+                        <h2 class="section-title reveal" style="font-size:2rem">Our <span
+                                class="highlight italic">Corporate Clients</span></h2>
+                        <div class="divider"></div>
+                    </div>
+                    <div class="grid-4">
+                        <div class="client-logo reveal">Tech Mahindra</div>
+                        <div class="client-logo reveal delay-1">TVS Group</div>
+                        <div class="client-logo reveal delay-2">Ashok Leyland</div>
+                        <div class="client-logo reveal delay-3">L&T Infotech</div>
+                        <div class="client-logo reveal">CTS Chennai</div>
+                        <div class="client-logo reveal delay-1">Infosys TN</div>
+                        <div class="client-logo reveal delay-2">Murugappa Group</div>
+                        <div class="client-logo reveal delay-3">Ramco Systems</div>
+                    </div>
+                </div>
+
+                <div class="contact-bar reveal" style="margin-top:4rem">
+                    <div>
+                        <h3 style="color:var(--white)">Ready to <span class="highlight">Partner With Us?</span></h3>
+                        <p>Sign a corporate agreement and enjoy premium rates and a dedicated account manager.</p>
+                    </div>
+                    <div style="display:flex;gap:1rem;flex-wrap:wrap">
+                        <a href="mailto:corporate@exploreeasy.in" class="btn btn-primary">📧 Contact Corporate Team</a>
+                        <a href="tel:+919876543210" class="btn btn-outline">📞 Call Now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="components.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

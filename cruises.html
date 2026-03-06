@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Cruise deals by Explore Easy Tours & Travels. Mediterranean, Caribbean, Asian and Indian Ocean cruises booked from Tamil Nadu.">
+    <title>Cruise Deals | Explore Easy Tours & Travels</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .cruise-card {
+            background: var(--navy-card);
+            border: 1px solid var(--border-glass);
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            transition: var(--transition);
+        }
+
+        .cruise-card:hover {
+            border-color: var(--gold);
+            transform: translateY(-6px);
+            box-shadow: var(--shadow-glow);
+        }
+
+        .cruise-img {
+            height: 240px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .cruise-img img {
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s;
+        }
+
+        .cruise-card:hover .cruise-img img {
+            transform: scale(1.06);
+        }
+
+        .cruise-ribbon {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background: linear-gradient(135deg, var(--gold), var(--gold-dark));
+            color: var(--navy);
+            font-size: 0.7rem;
+            font-weight: 700;
+            padding: 0.35rem 0.8rem;
+            border-radius: 20px;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+
+        .cruise-body {
+            padding: 1.5rem;
+        }
+
+        .cruise-route {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 0.5rem;
+            font-size: 0.8rem;
+            color: var(--gold);
+            font-weight: 600;
+        }
+
+        .cruise-name {
+            font-family: var(--font-serif);
+            font-size: 1.3rem;
+            color: var(--white);
+            margin-bottom: 0.5rem;
+        }
+
+        .cruise-ship {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            margin-bottom: 1rem;
+        }
+
+        .cruise-includes {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .include-pill {
+            font-size: 0.7rem;
+            padding: 0.25rem 0.65rem;
+            border: 1px solid var(--border-glass);
+            border-radius: 20px;
+            color: var(--text-muted);
+        }
+
+        .cruise-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-top: 1px solid var(--border-glass);
+            padding-top: 1rem;
+            margin-top: 1rem;
+        }
+
+        .cruise-price .nights {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            display: block;
+        }
+
+        .cruise-price .amt {
+            font-family: var(--font-serif);
+            font-size: 1.7rem;
+            color: var(--gold);
+            font-weight: 700;
+        }
+
+        .cabin-section {
+            background: var(--navy-mid);
+            padding: 5rem 0;
+        }
+
+        .cabin-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.5rem;
+        }
+
+        @media(max-width:768px) {
+            .cabin-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        .cabin-card {
+            background: var(--navy-card);
+            border: 1px solid var(--border-glass);
+            border-radius: var(--radius-md);
+            padding: 1.75rem;
+            text-align: center;
+            transition: var(--transition);
+        }
+
+        .cabin-card:hover {
+            border-color: var(--gold);
+            transform: translateY(-4px);
+        }
+
+        .cabin-card.featured {
+            border-color: var(--gold);
+            background: linear-gradient(135deg, rgba(212, 175, 55, 0.08), var(--navy-card));
+        }
+
+        .cabin-icon {
+            font-size: 2.5rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .cabin-name {
+            font-family: var(--font-serif);
+            font-size: 1.1rem;
+            color: var(--white);
+            margin-bottom: 0.5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <section class="page-hero">
+            <div class="page-hero-bg"
+                style="background-image:url('https://images.unsplash.com/photo-1548574505-5e239809ee19?w=1920&q=80');opacity:0.4">
+            </div>
+            <div class="page-hero-overlay"></div>
+            <div class="container">
+                <div class="page-hero-content">
+                    <div class="breadcrumb"><a href="index.html">Home</a><span>/</span><span>Cruises</span></div>
+                    <p class="section-label">🚢 Sail the World</p>
+                    <h1>Cruise <span class="highlight italic">Deals</span></h1>
+                    <p style="max-width:500px;margin-top:1rem;color:var(--white-60)">World-class cruise holidays —
+                        Mediterranean, Caribbean, Asian coastal and Indian Ocean voyages.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="section-header">
+                    <p class="section-label">⚓ Featured Voyages</p>
+                    <h2 class="section-title reveal">Select Your <span class="highlight italic">Cruise</span></h2>
+                    <div class="divider"></div>
+                </div>
+                <div class="grid-3">
+                    <div class="cruise-card reveal">
+                        <div class="cruise-img"><img
+                                src="https://images.unsplash.com/photo-1548574505-5e239809ee19?w=600&q=80"
+                                alt="Mediterranean Cruise"><span class="cruise-ribbon">Popular</span></div>
+                        <div class="cruise-body">
+                            <div class="cruise-route">🇮🇹 Italy → 🇬🇷 Greece → 🇪🇸 Spain</div>
+                            <div class="cruise-name">Mediterranean Marvel</div>
+                            <div class="cruise-ship">MSC Bellissima · 7 Nights</div>
+                            <div class="cruise-includes">
+                                <span class="include-pill">✅ Meals Included</span><span class="include-pill">🍹 Drinks
+                                    Package</span><span class="include-pill">🎭 Entertainment</span><span
+                                    class="include-pill">🏊 Pool Deck</span>
+                            </div>
+                            <div class="cruise-footer">
+                                <div class="cruise-price"><span class="nights">7 Nights · From Chennai</span><span
+                                        class="amt">₹1,28,000</span></div>
+                                <a href="booking.html" class="btn btn-primary"
+                                    style="padding:0.6rem 1.25rem;font-size:0.85rem">Enquire</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cruise-card reveal delay-1">
+                        <div class="cruise-img"><img
+                                src="https://images.unsplash.com/photo-1585386959984-a4155224a1ad?w=600&q=80"
+                                alt="Caribbean Cruise"><span class="cruise-ribbon">Luxury</span></div>
+                        <div class="cruise-body">
+                            <div class="cruise-route">🇯🇲 Jamaica → 🇧🇸 Bahamas → 🇨🇺 Cuba</div>
+                            <div class="cruise-name">Caribbean Dream Voyage</div>
+                            <div class="cruise-ship">Royal Caribbean Oasis · 10 Nights</div>
+                            <div class="cruise-includes">
+                                <span class="include-pill">✅ All Inclusive</span><span class="include-pill">🎢 Adventure
+                                    Deck</span><span class="include-pill">🎶 Live Shows</span>
+                            </div>
+                            <div class="cruise-footer">
+                                <div class="cruise-price"><span class="nights">10 Nights · From Chennai</span><span
+                                        class="amt">₹2,45,000</span></div>
+                                <a href="booking.html" class="btn btn-primary"
+                                    style="padding:0.6rem 1.25rem;font-size:0.85rem">Enquire</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cruise-card reveal delay-2">
+                        <div class="cruise-img"><img
+                                src="https://images.unsplash.com/photo-1504730655501-609d04879db2?w=600&q=80"
+                                alt="Asian Cruise"><span class="cruise-ribbon">Best Value</span></div>
+                        <div class="cruise-body">
+                            <div class="cruise-route">🇸🇬 Singapore → 🇲🇾 Malaysia → 🇹🇭 Thailand</div>
+                            <div class="cruise-name">Asian Coastal Explorer</div>
+                            <div class="cruise-ship">Costa neoClassica · 5 Nights</div>
+                            <div class="cruise-includes">
+                                <span class="include-pill">✅ Breakfast & Dinner</span><span class="include-pill">🏖
+                                    Beach Stops</span><span class="include-pill">🛍 Shopping Tours</span>
+                            </div>
+                            <div class="cruise-footer">
+                                <div class="cruise-price"><span class="nights">5 Nights · From Chennai</span><span
+                                        class="amt">₹68,000</span></div>
+                                <a href="booking.html" class="btn btn-primary"
+                                    style="padding:0.6rem 1.25rem;font-size:0.85rem">Enquire</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cruise-card reveal">
+                        <div class="cruise-img"><img
+                                src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=600&q=80"
+                                alt="Indian Ocean Cruise"><span class="cruise-ribbon">Exclusive</span></div>
+                        <div class="cruise-body">
+                            <div class="cruise-route">🇮🇳 Mumbai → 🇲🇻 Maldives → 🇸🇨 Seychelles</div>
+                            <div class="cruise-name">Indian Ocean Odyssey</div>
+                            <div class="cruise-ship">Celebrity Solstice · 8 Nights</div>
+                            <div class="cruise-includes">
+                                <span class="include-pill">✅ All Inclusive</span><span class="include-pill">🤿
+                                    Snorkelling</span><span class="include-pill">🌅 Sunset Deck</span>
+                            </div>
+                            <div class="cruise-footer">
+                                <div class="cruise-price"><span class="nights">8 Nights · From Mumbai</span><span
+                                        class="amt">₹1,80,000</span></div>
+                                <a href="booking.html" class="btn btn-primary"
+                                    style="padding:0.6rem 1.25rem;font-size:0.85rem">Enquire</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cruise-card reveal delay-1">
+                        <div class="cruise-img"><img
+                                src="https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?w=600&q=80"
+                                alt="Norwegian Fjords"><span class="cruise-ribbon">Scenic</span></div>
+                        <div class="cruise-body">
+                            <div class="cruise-route">🇬🇧 UK → 🇳🇴 Norway → 🇮🇸 Iceland</div>
+                            <div class="cruise-name">Norwegian Fjords & Northern Lights</div>
+                            <div class="cruise-ship">Hurtigruten Cruise · 10 Nights</div>
+                            <div class="cruise-includes">
+                                <span class="include-pill">✅ Full Board</span><span class="include-pill">🌌 Aurora
+                                    Viewing</span><span class="include-pill">🛷 Excursions</span>
+                            </div>
+                            <div class="cruise-footer">
+                                <div class="cruise-price"><span class="nights">10 Nights · From Chennai</span><span
+                                        class="amt">₹2,95,000</span></div>
+                                <a href="booking.html" class="btn btn-primary"
+                                    style="padding:0.6rem 1.25rem;font-size:0.85rem">Enquire</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cruise-card reveal delay-2">
+                        <div class="cruise-img"><img
+                                src="https://images.unsplash.com/photo-1568040580-8e5a893b4a56?w=600&q=80"
+                                alt="Dubai Cruise"><span class="cruise-ribbon">Budget</span></div>
+                        <div class="cruise-body">
+                            <div class="cruise-route">🇦🇪 Dubai → 🇴🇲 Oman → 🇦🇪 Dubai</div>
+                            <div class="cruise-name">Arabian Gulf Weekend Cruise</div>
+                            <div class="cruise-ship">MSC Lirica · 3 Nights</div>
+                            <div class="cruise-includes">
+                                <span class="include-pill">✅ Half Board</span><span class="include-pill">🎰
+                                    Casino</span><span class="include-pill">🛍 Duty Free</span>
+                            </div>
+                            <div class="cruise-footer">
+                                <div class="cruise-price"><span class="nights">3 Nights · From Dubai</span><span
+                                        class="amt">₹38,000</span></div>
+                                <a href="booking.html" class="btn btn-primary"
+                                    style="padding:0.6rem 1.25rem;font-size:0.85rem">Enquire</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cabin-section">
+            <div class="container">
+                <div class="section-header">
+                    <p class="section-label">🛏 Choose Your Cabin</p>
+                    <h2 class="section-title reveal">Cabin <span class="highlight italic">Categories</span></h2>
+                    <div class="divider"></div>
+                </div>
+                <div class="cabin-grid">
+                    <div class="cabin-card reveal">
+                        <div class="cabin-icon">🛏</div>
+                        <div class="cabin-name">Interior Cabin</div>
+                        <p style="font-size:0.85rem">Cosy and affordable — perfect for budget travellers who spend most
+                            time exploring.</p>
+                        <div
+                            style="color:var(--gold);font-family:var(--font-serif);font-size:1.3rem;margin-top:0.75rem">
+                            From ₹38,000</div>
+                    </div>
+                    <div class="cabin-card reveal delay-1">
+                        <div class="cabin-icon">🪟</div>
+                        <div class="cabin-name">Ocean View Cabin</div>
+                        <p style="font-size:0.85rem">Wake up to sea views every morning. A perfect balance of comfort
+                            and value.</p>
+                        <div
+                            style="color:var(--gold);font-family:var(--font-serif);font-size:1.3rem;margin-top:0.75rem">
+                            From ₹55,000</div>
+                    </div>
+                    <div class="cabin-card featured reveal delay-2">
+                        <div class="cabin-icon">🌅</div>
+                        <div class="cabin-name">Balcony Suite</div>
+                        <p style="font-size:0.85rem">Private balcony, premium bedding and exclusive butler service. Most
+                            popular choice!</p>
+                        <div
+                            style="color:var(--gold);font-family:var(--font-serif);font-size:1.3rem;margin-top:0.75rem">
+                            From ₹88,000</div><span class="badge badge-gold" style="margin-top:0.5rem">Most
+                            Popular</span>
+                    </div>
+                    <div class="cabin-card reveal delay-3">
+                        <div class="cabin-icon">👑</div>
+                        <div class="cabin-name">Penthouse Suite</div>
+                        <p style="font-size:0.85rem">Ultra-luxury penthouse with panoramic ocean views, private dining
+                            and VIP access.</p>
+                        <div
+                            style="color:var(--gold);font-family:var(--font-serif);font-size:1.3rem;margin-top:0.75rem">
+                            From ₹1,80,000</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="components.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Destination guides and travel tips by Explore Easy Tours & Travels. Discover the best time to visit, things to do, and insider tips for destinations worldwide.">
+    <title>Destination Guides & Travel Tips | Explore Easy Tours & Travels</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .guide-card {
+            background: var(--navy-card);
+            border: 1px solid var(--border-glass);
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            transition: var(--transition);
+        }
+
+        .guide-card:hover {
+            border-color: var(--gold);
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-glow);
+        }
+
+        .guide-img {
+            height: 220px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .guide-img img {
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s;
+        }
+
+        .guide-card:hover .guide-img img {
+            transform: scale(1.06);
+        }
+
+        .guide-region {
+            position: absolute;
+            bottom: 0.75rem;
+            left: 0.75rem;
+            background: rgba(0, 0, 0, 0.7);
+            border: 1px solid var(--border-glass);
+            border-radius: 20px;
+            font-size: 0.7rem;
+            padding: 0.25rem 0.75rem;
+            color: var(--white-60);
+            backdrop-filter: blur(8px);
+        }
+
+        .guide-body {
+            padding: 1.25rem;
+        }
+
+        .guide-title {
+            font-family: var(--font-serif);
+            font-size: 1.15rem;
+            color: var(--white);
+            margin-bottom: 0.5rem;
+        }
+
+        .guide-meta {
+            display: flex;
+            gap: 1rem;
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            margin-bottom: 0.75rem;
+        }
+
+        .tip-card {
+            background: var(--navy-card);
+            border: 1px solid var(--border-glass);
+            border-radius: var(--radius-lg);
+            padding: 1.75rem;
+            transition: var(--transition);
+        }
+
+        .tip-card:hover {
+            border-color: var(--gold);
+        }
+
+        .tip-icon {
+            font-size: 2rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .tip-title {
+            font-family: var(--font-serif);
+            font-size: 1.1rem;
+            color: var(--white);
+            margin-bottom: 0.5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <section class="page-hero">
+            <div class="page-hero-bg"
+                style="background-image:url('https://images.unsplash.com/photo-1530521954074-e64f6810b32d?w=1920&q=80');opacity:0.4">
+            </div>
+            <div class="page-hero-overlay"></div>
+            <div class="container">
+                <div class="page-hero-content">
+                    <div class="breadcrumb"><a href="index.html">Home</a><span>/</span><span>Destinations</span></div>
+                    <p class="section-label">🗺 Explore the World</p>
+                    <h1>Destination <span class="highlight italic">Guides</span></h1>
+                    <p style="max-width:520px;margin-top:1rem;color:var(--white-60)">Insider guides, travel tips, and
+                        everything you need to know about your next destination.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="section-header">
+                    <p class="section-label">🌍 Guides by Region</p>
+                    <h2 class="section-title reveal">Explore <span class="highlight italic">Destinations</span></h2>
+                    <div class="divider"></div>
+                </div>
+                <div class="filter-tabs">
+                    <button class="filter-tab active" data-filter="all">All</button>
+                    <button class="filter-tab" data-filter="india">India</button>
+                    <button class="filter-tab" data-filter="asia">Asia</button>
+                    <button class="filter-tab" data-filter="europe">Europe</button>
+                    <button class="filter-tab" data-filter="mideast">Middle East</button>
+                    <button class="filter-tab" data-filter="africa">Africa</button>
+                </div>
+                <div class="grid-3" id="guide-grid">
+                    <div class="guide-card reveal" data-category="india">
+                        <div class="guide-img"><img
+                                src="https://images.unsplash.com/photo-1609920658906-8223bd289001?w=600&q=80"
+                                alt="Tamil Nadu"><span class="guide-region">🇮🇳 India</span></div>
+                        <div class="guide-body">
+                            <div class="guide-title">Tamil Nadu — The Temple Land</div>
+                            <div class="guide-meta"><span>🕐 Best: Oct–Mar</span><span>🌡 Avg: 28°C</span></div>
+                            <p style="font-size:0.85rem">UNESCO-listed temples, vibrant Pongal celebrations, Marina
+                                Beach and authentic Chettinad cuisine.</p><a href="#"
+                                style="color:var(--gold);font-size:0.85rem;font-weight:600;display:block;margin-top:0.75rem">Read
+                                Guide →</a>
+                        </div>
+                    </div>
+                    <div class="guide-card reveal delay-1" data-category="india">
+                        <div class="guide-img"><img
+                                src="https://images.unsplash.com/photo-1593693397690-362cb9666fc2?w=600&q=80"
+                                alt="Kashmir"><span class="guide-region">🇮🇳 India</span></div>
+                        <div class="guide-body">
+                            <div class="guide-title">Kashmir — Heaven on Earth</div>
+                            <div class="guide-meta"><span>🕐 Best: Apr–Oct</span><span>🌡 Avg: 14°C</span></div>
+                            <p style="font-size:0.85rem">Dal Lake, Mughal gardens, Gulmarg skiing, Pahalgam meadows and
+                                handcrafted Kashmiri art.</p><a href="#"
+                                style="color:var(--gold);font-size:0.85rem;font-weight:600;display:block;margin-top:0.75rem">Read
+                                Guide →</a>
+                        </div>
+                    </div>
+                    <div class="guide-card reveal delay-2" data-category="asia">
+                        <div class="guide-img"><img
+                                src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=600&q=80"
+                                alt="Bali"><span class="guide-region">🇮🇩 Indonesia</span></div>
+                        <div class="guide-body">
+                            <div class="guide-title">Bali — Island of the Gods</div>
+                            <div class="guide-meta"><span>🕐 Best: Apr–Oct</span><span>🌡 Avg: 27°C</span></div>
+                            <p style="font-size:0.85rem">Sacred temples, Ubud jungle swings, rice terraces, Seminyak
+                                nightlife, and world-class surfing.</p><a href="#"
+                                style="color:var(--gold);font-size:0.85rem;font-weight:600;display:block;margin-top:0.75rem">Read
+                                Guide →</a>
+                        </div>
+                    </div>
+                    <div class="guide-card reveal" data-category="europe">
+                        <div class="guide-img"><img
+                                src="https://images.unsplash.com/photo-1499856871958-5b9627545d1a?w=600&q=80"
+                                alt="Paris"><span class="guide-region">🇫🇷 France</span></div>
+                        <div class="guide-body">
+                            <div class="guide-title">Paris — The City of Light</div>
+                            <div class="guide-meta"><span>🕐 Best: Apr–Jun, Sep–Nov</span><span>🌡 Avg: 16°C</span>
+                            </div>
+                            <p style="font-size:0.85rem">Eiffel Tower, Louvre, Versailles, river Seine cruises,
+                                Montmartre and world-class French cuisine.</p><a href="#"
+                                style="color:var(--gold);font-size:0.85rem;font-weight:600;display:block;margin-top:0.75rem">Read
+                                Guide →</a>
+                        </div>
+                    </div>
+                    <div class="guide-card reveal delay-1" data-category="mideast">
+                        <div class="guide-img"><img
+                                src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=600&q=80"
+                                alt="Dubai"><span class="guide-region">🇦🇪 UAE</span></div>
+                        <div class="guide-body">
+                            <div class="guide-title">Dubai — City of Tomorrow</div>
+                            <div class="guide-meta"><span>🕐 Best: Nov–Mar</span><span>🌡 Avg: 24°C</span></div>
+                            <p style="font-size:0.85rem">Burj Khalifa, Dubai Mall, desert safaris, dhow cruises and the
+                                historic Al Fahidi district.</p><a href="#"
+                                style="color:var(--gold);font-size:0.85rem;font-weight:600;display:block;margin-top:0.75rem">Read
+                                Guide →</a>
+                        </div>
+                    </div>
+                    <div class="guide-card reveal delay-2" data-category="africa">
+                        <div class="guide-img"><img
+                                src="https://images.unsplash.com/photo-1516426122078-c23e76319801?w=600&q=80"
+                                alt="Kenya Safari"><span class="guide-region">🇰🇪 Kenya</span></div>
+                        <div class="guide-body">
+                            <div class="guide-title">Kenya — The Great Safari</div>
+                            <div class="guide-meta"><span>🕐 Best: Jun–Oct</span><span>🌡 Avg: 22°C</span></div>
+                            <p style="font-size:0.85em">Maasai Mara wildebeest migration, Amboseli elephants, Nairobi
+                                national park and Diani beach.</p><a href="#"
+                                style="color:var(--gold);font-size:0.85rem;font-weight:600;display:block;margin-top:0.75rem">Read
+                                Guide →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" style="background:var(--navy-mid)">
+            <div class="container">
+                <div class="section-header">
+                    <p class="section-label">💡 Essential Tips</p>
+                    <h2 class="section-title reveal">Smart <span class="highlight italic">Travel Tips</span></h2>
+                    <div class="divider"></div>
+                </div>
+                <div class="grid-4">
+                    <div class="tip-card reveal">
+                        <div class="tip-icon">🗓</div>
+                        <div class="tip-title">Book Early, Save Big</div>
+                        <p style="font-size:0.85rem">Book flights 6–8 weeks in advance for domestic and 3–6 months for
+                            international to get the best fares.</p>
+                    </div>
+                    <div class="tip-card reveal delay-1">
+                        <div class="tip-icon">🧳</div>
+                        <div class="tip-title">Pack Light & Right</div>
+                        <p style="font-size:0.85rem">Roll clothes instead of folding, use packing cubes, and always
+                            carry copies of important documents.</p>
+                    </div>
+                    <div class="tip-card reveal delay-2">
+                        <div class="tip-icon">💊</div>
+                        <div class="tip-title">Health Precautions</div>
+                        <p style="font-size:0.85rem">Check vaccination requirements, carry a basic first-aid kit, and
+                            get travel insurance before every trip.</p>
+                    </div>
+                    <div class="tip-card reveal delay-3">
+                        <div class="tip-icon">💳</div>
+                        <div class="tip-title">Money Matters</div>
+                        <p style="font-size:0.85rem">Carry multiple payment options, inform your bank before travelling,
+                            and keep some local cash handy.</p>
+                    </div>
+                    <div class="tip-card reveal">
+                        <div class="tip-icon">📱</div>
+                        <div class="tip-title">Stay Connected</div>
+                        <p style="font-size:0.85rem">Get a local SIM or an international roaming plan. Download offline
+                            maps before your trip.</p>
+                    </div>
+                    <div class="tip-card reveal delay-1">
+                        <div class="tip-icon">🌐</div>
+                        <div class="tip-title">Respect Local Culture</div>
+                        <p style="font-size:0.85rem">Research dress codes, local customs and etiquette. A few words in
+                            the local language goes a long way.</p>
+                    </div>
+                    <div class="tip-card reveal delay-2">
+                        <div class="tip-icon">🛫</div>
+                        <div class="tip-title">Airport Tips</div>
+                        <p style="font-size:0.85rem">Arrive 2–3 hours early for international flights. Keep liquids in
+                            clear bags and charge your devices before security.</p>
+                    </div>
+                    <div class="tip-card reveal delay-3">
+                        <div class="tip-icon">📸</div>
+                        <div class="tip-title">Capture Memories</div>
+                        <p style="font-size:0.85rem">Charge all devices the night before. Back up photos to cloud daily.
+                            Don't forget to also enjoy the moment!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="components.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

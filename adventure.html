@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Adventure and eco-tourism packages by Explore Easy Tours & Travels. Trekking, safaris, diving, climbing and sustainable travel from Tamil Nadu.">
+    <title>Adventure & Eco-Tourism | Explore Easy Tours & Travels</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        :root {
+            --adv: #2EA05C;
+        }
+
+        .adv-card {
+            border-radius: var(--radius-xl);
+            overflow: hidden;
+            position: relative;
+            aspect-ratio: 3/4;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .adv-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s;
+        }
+
+        .adv-card:hover img {
+            transform: scale(1.08);
+        }
+
+        .adv-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(5, 20, 10, 0.9) 0%, rgba(0, 0, 0, 0.2) 60%, transparent 100%);
+        }
+
+        .adv-content {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 1.5rem;
+        }
+
+        .adv-tag {
+            display: inline-block;
+            background: var(--adv);
+            color: white;
+            font-size: 0.65rem;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            margin-bottom: 0.5rem;
+        }
+
+        .adv-title {
+            font-family: var(--font-serif);
+            font-size: 1.3rem;
+            color: white;
+        }
+
+        .adv-price {
+            font-size: 0.88rem;
+            color: var(--gold-light);
+            font-weight: 600;
+            margin-top: 0.4rem;
+        }
+
+        .eco-pledge {
+            background: rgba(46, 160, 92, 0.08);
+            border: 1px solid rgba(46, 160, 92, 0.25);
+            border-radius: var(--radius-lg);
+            padding: 2rem;
+            display: flex;
+            gap: 1.25rem;
+            align-items: flex-start;
+        }
+
+        .eco-pledge-icon {
+            font-size: 2rem;
+            flex-shrink: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <section class="page-hero" style="background:linear-gradient(135deg,#041A09,#061A0C,#0A0E1A)">
+            <div class="page-hero-bg"
+                style="background-image:url('https://images.unsplash.com/photo-1551632811-561732d1e306?w=1920&q=80');opacity:0.45">
+            </div>
+            <div class="page-hero-overlay"
+                style="background:linear-gradient(to top,#041A09,rgba(4,26,9,0.5),rgba(10,14,26,0.2))"></div>
+            <div class="container">
+                <div class="page-hero-content">
+                    <div class="breadcrumb"><a href="index.html">Home</a><span>/</span><span>Adventure</span></div>
+                    <p class="section-label" style="color:var(--adv)">🧗 Thrill Seekers</p>
+                    <h1>Adventure & <span class="italic" style="color:var(--adv)">Eco-Tourism</span></h1>
+                    <p style="max-width:520px;margin-top:1rem;color:var(--white-60)">From Himalayan treks to African
+                        safaris — push your limits and reconnect with nature.</p>
+                    <a href="#adventures" class="btn btn-primary"
+                        style="margin-top:2rem;background:linear-gradient(135deg,var(--adv),#1A6B3A)">🏔 Explore
+                        Adventures</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="adventures">
+            <div class="container">
+                <div class="section-header">
+                    <p class="section-label" style="color:var(--adv)">⚡ Top Adventures</p>
+                    <h2 class="section-title reveal">Choose Your <span class="italic"
+                            style="color:var(--adv)">Adventure</span></h2>
+                    <div class="divider" style="background:linear-gradient(90deg,var(--adv),#60D48A)"></div>
+                </div>
+                <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem">
+                    <div class="adv-card reveal"><img
+                            src="https://images.unsplash.com/photo-1551632811-561732d1e306?w=600&q=80" alt="Trekking">
+                        <div class="adv-overlay"></div>
+                        <div class="adv-content"><span class="adv-tag">Trekking</span>
+                            <div class="adv-title">Himalayan Trek — Manali to Leh</div>
+                            <div class="adv-price">From ₹28,000 · 10 Days</div><a href="booking.html"
+                                class="btn btn-primary"
+                                style="margin-top:0.75rem;padding:0.5rem 1rem;font-size:0.8rem;background:linear-gradient(135deg,var(--adv),#1A6B3A)">Book</a>
+                        </div>
+                    </div>
+                    <div class="adv-card reveal delay-1"><img
+                            src="https://images.unsplash.com/photo-1516426122078-c23e76319801?w=600&q=80" alt="Safari">
+                        <div class="adv-overlay"></div>
+                        <div class="adv-content"><span class="adv-tag">Safari</span>
+                            <div class="adv-title">Kenya Maasai Mara Safari</div>
+                            <div class="adv-price">From ₹1,40,000 · 8 Days</div><a href="booking.html"
+                                class="btn btn-primary"
+                                style="margin-top:0.75rem;padding:0.5rem 1rem;font-size:0.8rem;background:linear-gradient(135deg,var(--adv),#1A6B3A)">Book</a>
+                        </div>
+                    </div>
+                    <div class="adv-card reveal delay-2"><img
+                            src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=600&q=80" alt="Diving">
+                        <div class="adv-overlay"></div>
+                        <div class="adv-content"><span class="adv-tag">Scuba Diving</span>
+                            <div class="adv-title">Andaman Deep Sea Dive</div>
+                            <div class="adv-price">From ₹22,000 · 5 Days</div><a href="booking.html"
+                                class="btn btn-primary"
+                                style="margin-top:0.75rem;padding:0.5rem 1rem;font-size:0.8rem;background:linear-gradient(135deg,var(--adv),#1A6B3A)">Book</a>
+                        </div>
+                    </div>
+                    <div class="adv-card reveal"><img
+                            src="https://images.unsplash.com/photo-1527004013197-933b162f63a3?w=600&q=80"
+                            alt="Snow Sports">
+                        <div class="adv-overlay"></div>
+                        <div class="adv-content"><span class="adv-tag">Snow Sports</span>
+                            <div class="adv-title">Gulmarg Skiing & Snow</div>
+                            <div class="adv-price">From ₹24,000 · 5 Days</div><a href="booking.html"
+                                class="btn btn-primary"
+                                style="margin-top:0.75rem;padding:0.5rem 1rem;font-size:0.8rem;background:linear-gradient(135deg,var(--adv),#1A6B3A)">Book</a>
+                        </div>
+                    </div>
+                    <div class="adv-card reveal delay-1"><img
+                            src="https://images.unsplash.com/photo-1590523277543-a94d2e4eb00b?w=600&q=80" alt="Camping">
+                        <div class="adv-overlay"></div>
+                        <div class="adv-content"><span class="adv-tag">Camping</span>
+                            <div class="adv-title">Coorg Forest Camping</div>
+                            <div class="adv-price">From ₹8,500 · 3 Days</div><a href="booking.html"
+                                class="btn btn-primary"
+                                style="margin-top:0.75rem;padding:0.5rem 1rem;font-size:0.8rem;background:linear-gradient(135deg,var(--adv),#1A6B3A)">Book</a>
+                        </div>
+                    </div>
+                    <div class="adv-card reveal delay-2"><img
+                            src="https://images.unsplash.com/photo-1575430462374-6c1c55bcfa74?w=600&q=80"
+                            alt="Rock Climbing">
+                        <div class="adv-overlay"></div>
+                        <div class="adv-content"><span class="adv-tag">Rock Climbing</span>
+                            <div class="adv-title">Hampi Rock Climbing</div>
+                            <div class="adv-price">From ₹6,000 · 2 Days</div><a href="booking.html"
+                                class="btn btn-primary"
+                                style="margin-top:0.75rem;padding:0.5rem 1rem;font-size:0.8rem;background:linear-gradient(135deg,var(--adv),#1A6B3A)">Book</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" style="background:var(--navy-mid)">
+            <div class="container">
+                <div class="section-header">
+                    <p class="section-label" style="color:var(--adv)">🌿 ECO PLEDGE</p>
+                    <h2 class="section-title reveal">We Travel <span class="italic"
+                            style="color:var(--adv)">Responsibly</span></h2>
+                    <div class="divider" style="background:linear-gradient(90deg,var(--adv),#60D48A)"></div>
+                </div>
+                <div style="display:flex;flex-direction:column;gap:1.25rem;max-width:860px;margin:0 auto">
+                    <div class="eco-pledge reveal">
+                        <div class="eco-pledge-icon">🌱</div>
+                        <div>
+                            <h4 style="color:var(--white);margin-bottom:0.4rem">Carbon Offset Programme</h4>
+                            <p style="font-size:0.87rem">For every tour booked, we plant 10 trees. We've planted 20,000+
+                                trees across Tamil Nadu and Uttarakhand.</p>
+                        </div>
+                    </div>
+                    <div class="eco-pledge reveal delay-1">
+                        <div class="eco-pledge-icon">🏘</div>
+                        <div>
+                            <h4 style="color:var(--white);margin-bottom:0.4rem">Support Local Communities</h4>
+                            <p style="font-size:0.87rem">We partner with local guides, home-stays and artisans to ensure
+                                tourism money benefits local communities.</p>
+                        </div>
+                    </div>
+                    <div class="eco-pledge reveal delay-2">
+                        <div class="eco-pledge-icon">🚫</div>
+                        <div>
+                            <h4 style="color:var(--white);margin-bottom:0.4rem">No Plastic Policy</h4>
+                            <p style="font-size:0.87rem">All our eco tours carry re-usable water bottles and cloth bags.
+                                We conduct clean-up drives at trekking sites.</p>
+                        </div>
+                    </div>
+                    <div class="eco-pledge reveal">
+                        <div class="eco-pledge-icon">🦁</div>
+                        <div>
+                            <h4 style="color:var(--white);margin-bottom:0.4rem">Ethical Wildlife Tourism</h4>
+                            <p style="font-size:0.87rem">We do NOT support rides on captive animals. All safaris are
+                                conducted in certified eco-friendly reserves.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="components.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Explore Easy Tours & Travels – Browse vacation packages by region and theme. Family, Luxury, Budget, Adventure, Domestic and International tours from Tamil Nadu.">
+    <title>Vacation Packages | Explore Easy Tours & Travels</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <main>
+        <!-- PAGE HERO -->
+        <section class="page-hero" style="min-height:55vh">
+            <div class="page-hero-bg"
+                style="background-image:url('https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=1920&q=80');opacity:0.4">
+            </div>
+            <div class="page-hero-overlay"></div>
+            <div class="container">
+                <div class="page-hero-content">
+                    <div class="breadcrumb"><a href="index.html">Home</a><span>/</span><span>Packages</span></div>
+                    <p class="section-label">🌍 Explore the World</p>
+                    <h1>Vacation <span class="highlight italic">Packages</span></h1>
+                    <p style="max-width:560px;margin-top:1rem;color:var(--white-60)">Curated journeys by region and
+                        theme — from budget-friendly domestic getaways to ultra-luxury international escapes.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- FILTER & PACKAGES -->
+        <section class="section">
+            <div class="container">
+                <!-- Region Tabs -->
+                <p class="section-label">Browse by Region</p>
+                <div class="filter-tabs" id="region-tabs">
+                    <button class="filter-tab active" data-filter="all">All</button>
+                    <button class="filter-tab" data-filter="tamil-nadu">Tamil Nadu</button>
+                    <button class="filter-tab" data-filter="india">India</button>
+                    <button class="filter-tab" data-filter="asia">Asia</button>
+                    <button class="filter-tab" data-filter="europe">Europe</button>
+                    <button class="filter-tab" data-filter="middleeast">Middle East</button>
+                    <button class="filter-tab" data-filter="americas">Americas</button>
+                </div>
+                <!-- Theme Tabs -->
+                <p class="section-label" style="margin-top:1rem">Browse by Theme</p>
+                <div class="filter-tabs" id="theme-tabs">
+                    <button class="filter-tab active" data-filter="all">All Themes</button>
+                    <button class="filter-tab" data-filter="family">👨‍👩‍👧 Family</button>
+                    <button class="filter-tab" data-filter="luxury">💎 Luxury</button>
+                    <button class="filter-tab" data-filter="budget">💰 Budget</button>
+                    <button class="filter-tab" data-filter="adventure">🧗 Adventure</button>
+                    <button class="filter-tab" data-filter="cultural">🏛 Cultural</button>
+                    <button class="filter-tab" data-filter="pilgrimage">🙏 Pilgrimage</button>
+                </div>
+
+                <div class="grid-3" id="packages-grid">
+                    <div class="pkg-card reveal" data-category="tamil-nadu family">
+                        <div class="pkg-card-img"><img
+                                src="https://images.unsplash.com/photo-1582510003544-4d00b7f74220?w=600&q=80"
+                                alt="Ooty"><span class="pkg-card-badge">Tamil Nadu</span></div>
+                        <div class="pkg-card-body">
+                            <div class="pkg-card-title">Ooty & Kodaikanal Hill Special</div>
+                            <div class="pkg-card-meta"><span>📍 Tamil Nadu</span><span>📅 4D 3N</span></div>
+                            <p style="font-size:0.85rem">Twin hill stations, tea estates, Doddabetta peak and Rose
+                                Garden.</p>
+                            <div class="pkg-card-footer">
+                                <div class="pkg-price"><span class="from">From</span><span
+                                        class="amount">₹8,999</span><span class="per">/person</span></div><a
+                                    href="booking.html" class="btn btn-primary"
+                                    style="padding:0.6rem 1.25rem;font-size:0.85rem">Book</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pkg-card reveal delay-1" data-category="tamil-nadu pilgrimage">
+                        <div class="pkg-card-img"><img
+                                src="https://images.unsplash.com/photo-1609920658906-8223bd289001?w=600&q=80"
+                                alt="Madurai Temple"><span class="pkg-card-badge">Pilgrimage</span></div>
+                        <div class="pkg-card-body">
+                            <div class="pkg-card-title">Char Dham Tamil Nadu Circuit</div>
+                            <div class="pkg-card-meta"><span>📍 Tamil Nadu</span><span>📅 6D 5N</span></div>
+                            <p style="font-size:0.85rem">Rameswaram, Madurai Meenakshi, Kanyakumari & Tirupati with AC
+                                transport.</p>
+                            <div class="pkg-card-footer">
+                                <div class="pkg-price"><span class="from">From</span><span
+                                        class="amount">₹12,500</span><span class="per">/person</span></div><a
+                                    href="booking.html" class="btn btn-primary"
+                                    style="padding:0.6rem 1.25rem;font-size:0.85rem">Book</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pkg-card reveal delay-2" data-category="india family cultural">
+                        <div class="pkg-card-img"><img
+                                src="https://images.unsplash.com/photo-1526481280693-3bfa7568e0f3?w=600&q=80"
+                                alt="Kerala"><span class="pkg-card-badge">Bestseller</span></div>
+                        <div class="pkg-card-body">
+                            <div class="pkg-card-title">Kerala Backwaters Bliss</div>
+                            <div class="pkg-card-meta"><span>📍 Kerala</span><span>📅 6D 5N</span></div>
+                            <p style="font-size:0.85rem">Munnar, Alleppey houseboat, Thekkady wildlife and Kovalam
+                                beach.</p>
+                            <div class="pkg-card-footer">
+                                <div class="pkg-price"><span class="from">From</span><span
+                                        class="amount">₹22,500</span><span class="per">/person</span></div><a
+                                    href="booking.html" class="btn btn-primary"
+                                    style="padding:0.6rem 1.25rem;font-size:0.85rem">Book</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pkg-card reveal" data-category="india adventure">
+                        <div class="pkg-card-img"><img
+                                src="https://images.unsplash.com/photo-1593693397690-362cb9666fc2?w=600&q=80"
+                                alt="Kashmir"><span class="pkg-card-badge">Adventure</span></div>
+                        <div class="pkg-card-body">
+                            <div class="pkg-card-title">Kashmir Valley Paradise</div>
+                            <div class="pkg-card-meta"><span>📍 Kashmir</span><span>📅 7D 6N</span></div>
+                            <p style="font-size:0.85rem">Dal Lake shikara, Gulmarg snow, Pahalgam meadows and Sonmarg.
+                            </p>
+                            <div class="pkg-card-footer">
+                                <div class="pkg-price"><span class="from">From</span><span
+                                        class="amount">₹38,000</span><span class="per">/person</span></div><a
+                                    href="booking.html" class="btn btn-primary"
+                                    style="padding:0.6rem 1.25rem;font-size:0.85rem">Book</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pkg-card reveal delay-1" data-category="asia luxury">
+                        <div class="pkg-card-img"><img
+                                src="https://images.unsplash.com/photo-1573843981267-be1999ff37cd?w=600&q=80"
+                                alt="Maldives"><span class="pkg-card-badge">Luxury</span></div>
+                        <div class="pkg-card-body">
+                            <div class="pkg-card-title">Maldives Overwater Villa</div>
+                            <div class="pkg-card-meta"><span>📍 Maldives</span><span>📅 6D 5N</span></div>
+                            <p style="font-size:0.85rem">Private overwater bungalow, sunset dinner, snorkelling and
+                                seaplane transfer.</p>
+                            <div class="pkg-card-footer">
+                                <div class="pkg-price"><span class="from">From</span><span
+                                        class="amount">₹55,000</span><span class="per">/person</span></div><a
+                                    href="booking.html" class="btn btn-primary"
+                                    style="padding:0.6rem 1.25rem;font-size:0.85rem">Book</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pkg-card reveal delay-2" data-category="asia family budget">
+                        <div class="pkg-card-img"><img
+                                src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=600&q=80"
+                                alt="Bali"><span class="pkg-card-badge">Hot Deal</span></div>
+                        <div class="pkg-card-body">
+                            <div class="pkg-card-title">Bali — Temples & Beaches</div>
+                            <div class="pkg-card-meta"><span>📍 Bali, Indonesia</span><span>📅 7D 6N</span></div>
+                            <p style="font-size:0.85rem">Ubud rice terraces, Tanah Lot, Seminyak beaches and Kecak dance
+                                show.</p>
+                            <div class="pkg-card-footer">
+                                <div class="pkg-price"><span class="from">From</span><span
+                                        class="amount">₹68,000</span><span class="per">/person</span></div><a
+                                    href="booking.html" class="btn btn-primary"
+                                    style="padding:0.6rem 1.25rem;font-size:0.85rem">Book</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pkg-card reveal" data-category="asia family budget">
+                        <div class="pkg-card-img"><img
+                                src="https://images.unsplash.com/photo-1563492065599-3520f775eeed?w=600&q=80"
+                                alt="Thailand"><span class="pkg-card-badge">Budget Friendly</span></div>
+                        <div class="pkg-card-body">
+                            <div class="pkg-card-title">Thailand — Bangkok & Pattaya</div>
+                            <div class="pkg-card-meta"><span>📍 Thailand</span><span>📅 6D 5N</span></div>
+                            <p style="font-size:0.85rem">Grand Palace, Coral Island, Floating Market and Alcazar show.
+                            </p>
+                            <div class="pkg-card-footer">
+                                <div class="pkg-price"><span class="from">From</span><span
+                                        class="amount">₹45,000</span><span class="per">/person</span></div><a
+                                    href="booking.html" class="btn btn-primary"
+                                    style="padding:0.6rem 1.25rem;font-size:0.85rem">Book</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pkg-card reveal delay-1" data-category="middleeast luxury">
+                        <div class="pkg-card-img"><img
+                                src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=600&q=80"
+                                alt="Dubai"><span class="pkg-card-badge">Middle East</span></div>
+                        <div class="pkg-card-body">
+                            <div class="pkg-card-title">Dubai Extravaganza</div>
+                            <div class="pkg-card-meta"><span>📍 Dubai, UAE</span><span>📅 5D 4N</span></div>
+                            <p style="font-size:0.85rem">Burj Khalifa, Desert Safari, Dubai Mall, Palm Jumeirah and dhow
+                                cruise.</p>
+                            <div class="pkg-card-footer">
+                                <div class="pkg-price"><span class="from">From</span><span
+                                        class="amount">₹65,000</span><span class="per">/person</span></div><a
+                                    href="booking.html" class="btn btn-primary"
+                                    style="padding:0.6rem 1.25rem;font-size:0.85rem">Book</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pkg-card reveal delay-2" data-category="europe luxury cultural">
+                        <div class="pkg-card-img"><img
+                                src="https://images.unsplash.com/photo-1499856871958-5b9627545d1a?w=600&q=80"
+                                alt="Europe"><span class="pkg-card-badge">Europe</span></div>
+                        <div class="pkg-card-body">
+                            <div class="pkg-card-title">Europe Grand Tour — 5 Countries</div>
+                            <div class="pkg-card-meta"><span>📍 Europe</span><span>📅 12D 11N</span></div>
+                            <p style="font-size:0.85rem">Paris · Rome · Amsterdam · Zurich · Barcelona — with hotel,
+                                transfers & guide.</p>
+                            <div class="pkg-card-footer">
+                                <div class="pkg-price"><span class="from">From</span><span
+                                        class="amount">₹1,85,000</span><span class="per">/person</span></div><a
+                                    href="booking.html" class="btn btn-primary"
+                                    style="padding:0.6rem 1.25rem;font-size:0.85rem">Book</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="text-align:center;margin-top:4rem">
+                    <div class="contact-bar" style="max-width:800px;margin:0 auto">
+                        <div>
+                            <h3 style="color:var(--white)">Need a Custom Package?</h3>
+                            <p>Tell us your wish — we build it perfectly.</p>
+                        </div>
+                        <a href="tel:+919876543210" class="btn btn-primary">📞 Call Us Now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="components.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Travel Insurance by Explore Easy Tours & Travels. Comprehensive coverage for medical, trip cancellation, baggage and more.">
+    <title>Travel Insurance | Explore Easy Tours & Travels</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .plan-card {
+            background: var(--navy-card);
+            border: 1px solid var(--border-glass);
+            border-radius: var(--radius-xl);
+            padding: 2.5rem;
+            text-align: center;
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .plan-card.featured {
+            border-color: var(--gold);
+            background: linear-gradient(135deg, rgba(212, 175, 55, 0.08), var(--navy-card));
+        }
+
+        .plan-card:hover {
+            transform: translateY(-6px);
+            box-shadow: var(--shadow-glow);
+            border-color: var(--gold);
+        }
+
+        .plan-badge {
+            position: absolute;
+            top: 1.5rem;
+            right: 1.5rem;
+            background: var(--gold);
+            color: var(--navy);
+            font-size: 0.65rem;
+            font-weight: 700;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+        }
+
+        .plan-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .plan-name {
+            font-family: var(--font-serif);
+            font-size: 1.5rem;
+            color: var(--white);
+            margin-bottom: 0.5rem;
+        }
+
+        .plan-price {
+            font-family: var(--font-serif);
+            font-size: 2.5rem;
+            color: var(--gold);
+            font-weight: 700;
+            margin: 1rem 0;
+        }
+
+        .plan-price span {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+
+        .plan-features {
+            list-style: none;
+            text-align: left;
+            margin: 1.5rem 0;
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+
+        .plan-features li {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.88rem;
+            color: var(--text-secondary);
+        }
+
+        .plan-features li::before {
+            content: '✓';
+            color: var(--gold);
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+
+        .plan-features li.na {
+            color: var(--text-muted);
+        }
+
+        .plan-features li.na::before {
+            content: '—';
+            color: var(--text-muted);
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <section class="page-hero" style="min-height:50vh">
+            <div class="page-hero-bg"
+                style="background-image:url('https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=1920&q=80');opacity:0.3">
+            </div>
+            <div class="page-hero-overlay"></div>
+            <div class="container">
+                <div class="page-hero-content">
+                    <div class="breadcrumb"><a href="index.html">Home</a><span>/</span><span>Insurance</span></div>
+                    <p class="section-label">🛡 Travel Protection</p>
+                    <h1>Travel <span class="highlight italic">Insurance</span></h1>
+                    <p style="max-width:520px;margin-top:1rem;color:var(--white-60)">Protect your trip from the
+                        unexpected. Comprehensive cover for medical emergencies, cancellations and more.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="section-header">
+                    <p class="section-label">Choose Your Plan</p>
+                    <h2 class="section-title reveal">Pick the Right <span class="highlight italic">Cover</span></h2>
+                    <div class="divider"></div>
+                </div>
+                <div class="grid-3">
+                    <div class="plan-card reveal">
+                        <div class="plan-icon">🛡</div>
+                        <div class="plan-name">Basic</div>
+                        <div class="plan-price">₹499 <span>/person/trip</span></div>
+                        <ul class="plan-features">
+                            <li>Medical Emergency Cover – ₹5 Lakhs</li>
+                            <li>Trip Cancellation – ₹50,000</li>
+                            <li>Baggage Loss – ₹25,000</li>
+                            <li>Personal Accident – ₹5 Lakhs</li>
+                            <li class="na">Adventure Sports Cover</li>
+                            <li class="na">Home Burglary Cover</li>
+                            <li class="na">Flight Delay Cover</li>
+                        </ul>
+                        <a href="tel:+919876543210" class="btn btn-outline"
+                            style="width:100%;justify-content:center">Get Basic Cover</a>
+                    </div>
+                    <div class="plan-card featured reveal delay-1">
+                        <div class="plan-badge">Most Popular</div>
+                        <div class="plan-icon">🌟</div>
+                        <div class="plan-name">Standard</div>
+                        <div class="plan-price">₹999 <span>/person/trip</span></div>
+                        <ul class="plan-features">
+                            <li>Medical Emergency Cover – ₹15 Lakhs</li>
+                            <li>Trip Cancellation – ₹1,50,000</li>
+                            <li>Baggage Loss – ₹75,000</li>
+                            <li>Personal Accident – ₹10 Lakhs</li>
+                            <li>Flight Delay Cover</li>
+                            <li>Home Burglary Cover</li>
+                            <li class="na">Adventure Sports Cover</li>
+                        </ul>
+                        <a href="tel:+919876543210" class="btn btn-primary"
+                            style="width:100%;justify-content:center">Get Standard Cover</a>
+                    </div>
+                    <div class="plan-card reveal delay-2">
+                        <div class="plan-icon">👑</div>
+                        <div class="plan-name">Premium</div>
+                        <div class="plan-price">₹1,999 <span>/person/trip</span></div>
+                        <ul class="plan-features">
+                            <li>Medical Emergency Cover – ₹50 Lakhs</li>
+                            <li>Trip Cancellation – ₹5,00,000</li>
+                            <li>Baggage Loss – ₹2,00,000</li>
+                            <li>Personal Accident – ₹25 Lakhs</li>
+                            <li>Flight Delay Cover</li>
+                            <li>Home Burglary Cover</li>
+                            <li>Adventure Sports Cover</li>
+                        </ul>
+                        <a href="tel:+919876543210" class="btn btn-outline"
+                            style="width:100%;justify-content:center">Get Premium Cover</a>
+                    </div>
+                </div>
+
+                <div style="margin-top:5rem">
+                    <div class="section-header" style="text-align:left">
+                        <p class="section-label">❓ Frequently Asked Questions</p>
+                        <h3 class="section-title reveal" style="font-size:1.8rem">Common <span
+                                class="highlight italic">Questions</span></h3>
+                    </div>
+                    <div style="max-width:860px">
+                        <div class="accordion-item reveal">
+                            <div class="accordion-header">What does travel insurance cover? <span
+                                    class="toggle">+</span></div>
+                            <div class="accordion-body">
+                                <div class="accordion-body-inner">Our travel insurance covers medical emergencies, trip
+                                    cancellation, baggage loss, flight delays, personal accidents, and more depending on
+                                    the plan you choose.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item reveal delay-1">
+                            <div class="accordion-header">Can I buy insurance after booking my trip? <span
+                                    class="toggle">+</span></div>
+                            <div class="accordion-body">
+                                <div class="accordion-body-inner">Yes. You can purchase travel insurance at any time
+                                    before your trip departs. However, for the best coverage (especially pre-trip
+                                    cancellation), it's recommended to buy immediately after booking.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item reveal delay-2">
+                            <div class="accordion-header">Is COVID-19 covered under travel insurance? <span
+                                    class="toggle">+</span></div>
+                            <div class="accordion-body">
+                                <div class="accordion-body-inner">Yes, our Standard and Premium plans include COVID-19
+                                    related medical expenses and trip cancellation due to COVID-19 diagnosis.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item reveal delay-3">
+                            <div class="accordion-header">How do I make a claim? <span class="toggle">+</span></div>
+                            <div class="accordion-body">
+                                <div class="accordion-body-inner">Call our 24/7 helpline (+91 98765 43210) immediately
+                                    in case of an emergency. For non-urgent claims, submit documents to
+                                    claims@exploreeasy.in within 30 days of return.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item reveal">
+                            <div class="accordion-header">Are pre-existing conditions covered? <span
+                                    class="toggle">+</span></div>
+                            <div class="accordion-body">
+                                <div class="accordion-body-inner">Pre-existing conditions are generally excluded.
+                                    However, our Premium plan offers optional cover for declared and stable pre-existing
+                                    conditions at an additional premium.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="components.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

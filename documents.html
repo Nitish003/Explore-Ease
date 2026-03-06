@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Travel document assistance by Explore Easy Tours & Travels. Passport, visa, travel insurance, forex and all travel documents from Tamil Nadu.">
+    <title>Travel Documents Assistance | Explore Easy Tours & Travels</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .doc-card {
+            background: var(--navy-card);
+            border: 1px solid var(--border-glass);
+            border-radius: var(--radius-lg);
+            padding: 2rem;
+            transition: var(--transition);
+            text-align: center;
+        }
+
+        .doc-card:hover {
+            border-color: var(--gold);
+            transform: translateY(-5px);
+        }
+
+        .doc-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .process-step {
+            display: flex;
+            align-items: flex-start;
+            gap: 1.5rem;
+            padding: 1.5rem;
+            background: var(--navy-card);
+            border: 1px solid var(--border-glass);
+            border-radius: var(--radius-lg);
+            position: relative;
+        }
+
+        .step-number {
+            flex-shrink: 0;
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--gold-dark), var(--gold-light));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 900;
+            font-size: 0.9rem;
+            color: var(--navy);
+            font-family: var(--font-serif);
+        }
+
+        .visa-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .visa-table th {
+            background: rgba(212, 175, 55, 0.1);
+            color: var(--gold);
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            padding: 1rem;
+            text-align: left;
+        }
+
+        .visa-table td {
+            padding: 0.9rem 1rem;
+            border-bottom: 1px solid var(--border-glass);
+            font-size: 0.87rem;
+            color: var(--text-secondary);
+        }
+
+        .visa-table tr:hover td {
+            color: var(--white);
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <section class="page-hero" style="min-height:50vh">
+            <div class="page-hero-bg"
+                style="background-image:url('https://images.unsplash.com/photo-1551730459-92db2a308d6a?w=1920&q=80');opacity:0.3">
+            </div>
+            <div class="page-hero-overlay"></div>
+            <div class="container">
+                <div class="page-hero-content">
+                    <div class="breadcrumb"><a href="index.html">Home</a><span>/</span><span>Documents</span></div>
+                    <p class="section-label">📋 Paperwork Made Easy</p>
+                    <h1>Travel Documents <span class="highlight italic">Assistance</span></h1>
+                    <p style="max-width:550px;margin-top:1rem;color:var(--white-60)">Passport, visa, forex, insurance —
+                        we handle all your travel document needs so you just show up ready to travel.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="section-header">
+                    <p class="section-label">📑 Our Services</p>
+                    <h2 class="section-title reveal">Document <span class="highlight italic">Services</span></h2>
+                    <div class="divider"></div>
+                </div>
+                <div class="grid-3">
+                    <div class="doc-card reveal">
+                        <div class="doc-icon">🛂</div>
+                        <h4 style="color:var(--white);font-size:1.15rem;margin-bottom:0.5rem">Visa Application</h4>
+                        <p style="font-size:0.87rem">End-to-end visa assistance for 60+ countries. Document preparation,
+                            form filling, appointment booking and status tracking.</p><a href="tel:+919876543210"
+                            class="btn btn-outline" style="margin-top:1rem;width:100%;justify-content:center">Get
+                            Help</a>
+                    </div>
+                    <div class="doc-card reveal delay-1">
+                        <div class="doc-icon">📗</div>
+                        <h4 style="color:var(--white);font-size:1.15rem;margin-bottom:0.5rem">Passport Services</h4>
+                        <p style="font-size:0.87rem">Fresh passport, tatkal, reissue and police verification assistance.
+                            We guide you through the Passport Seva Portal step by step.</p><a href="tel:+919876543210"
+                            class="btn btn-outline" style="margin-top:1rem;width:100%;justify-content:center">Get
+                            Help</a>
+                    </div>
+                    <div class="doc-card reveal delay-2">
+                        <div class="doc-icon">💱</div>
+                        <h4 style="color:var(--white);font-size:1.15rem;margin-bottom:0.5rem">Forex & Travel Card</h4>
+                        <p style="font-size:0.87rem">Best exchange rates for currency. Multi-currency travel cards for
+                            15+ currencies. Doorstep delivery in Tamil Nadu.</p><a href="tel:+919876543210"
+                            class="btn btn-outline" style="margin-top:1rem;width:100%;justify-content:center">Get
+                            Help</a>
+                    </div>
+                    <div class="doc-card reveal">
+                        <div class="doc-icon">🛡</div>
+                        <h4 style="color:var(--white);font-size:1.15rem;margin-bottom:0.5rem">Travel Insurance</h4>
+                        <p style="font-size:0.87rem">Instant policy issuance. Medical, trip cancellation, baggage,
+                            flight delay cover from top insurers.</p><a href="insurance.html" class="btn btn-outline"
+                            style="margin-top:1rem;width:100%;justify-content:center">View Plans</a>
+                    </div>
+                    <div class="doc-card reveal delay-1">
+                        <div class="doc-icon">📜</div>
+                        <h4 style="color:var(--white);font-size:1.15rem;margin-bottom:0.5rem">Document Attestation</h4>
+                        <p style="font-size:0.87rem">Apostille, MEA attestation, HRD and embassy attestation for
+                            educational, personal and commercial documents.</p><a href="tel:+919876543210"
+                            class="btn btn-outline" style="margin-top:1rem;width:100%;justify-content:center">Get
+                            Help</a>
+                    </div>
+                    <div class="doc-card reveal delay-2">
+                        <div class="doc-icon">✈</div>
+                        <h4 style="color:var(--white);font-size:1.15rem;margin-bottom:0.5rem">Airport Transfer Letter
+                        </h4>
+                        <p style="font-size:0.87rem">Official transfer and invitation letters, hotel booking
+                            confirmation prints, itinerary documents for embassy submission.</p><a
+                            href="tel:+919876543210" class="btn btn-outline"
+                            style="margin-top:1rem;width:100%;justify-content:center">Get Help</a>
+                    </div>
+                </div>
+
+                <div style="margin-top:5rem">
+                    <div class="section-header">
+                        <p class="section-label">🗺 Visa Guide</p>
+                        <h2 class="section-title reveal">Popular Visa <span class="highlight italic">Information</span>
+                        </h2>
+                        <div class="divider"></div>
+                    </div>
+                    <div class="glass-card-sm reveal" style="overflow-x:auto">
+                        <table class="visa-table">
+                            <thead>
+                                <tr>
+                                    <th>Country</th>
+                                    <th>Visa Type</th>
+                                    <th>Processing Time</th>
+                                    <th>Fees (Approx.)</th>
+                                    <th>On Arrival</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>🇹🇭 Thailand</td>
+                                    <td>Tourist</td>
+                                    <td>3-5 working days</td>
+                                    <td>₹3,500</td>
+                                    <td>✅ Yes</td>
+                                </tr>
+                                <tr>
+                                    <td>🇸🇬 Singapore</td>
+                                    <td>Tourist</td>
+                                    <td>5-7 working days</td>
+                                    <td>₹5,500</td>
+                                    <td>❌ No</td>
+                                </tr>
+                                <tr>
+                                    <td>🇦🇪 UAE / Dubai</td>
+                                    <td>Tourist / Business</td>
+                                    <td>2-3 working days</td>
+                                    <td>₹6,500</td>
+                                    <td>❌ No</td>
+                                </tr>
+                                <tr>
+                                    <td>🇲🇻 Maldives</td>
+                                    <td>Tourist</td>
+                                    <td>On Arrival</td>
+                                    <td>Free</td>
+                                    <td>✅ Yes</td>
+                                </tr>
+                                <tr>
+                                    <td>🇫🇷 France (Schengen)</td>
+                                    <td>Tourist / Business</td>
+                                    <td>15-20 working days</td>
+                                    <td>₹10,500</td>
+                                    <td>❌ No</td>
+                                </tr>
+                                <tr>
+                                    <td>🇺🇸 USA</td>
+                                    <td>B1/B2 Tourist</td>
+                                    <td>30-60+ days</td>
+                                    <td>₹16,000</td>
+                                    <td>❌ No</td>
+                                </tr>
+                                <tr>
+                                    <td>🇬🇧 UK</td>
+                                    <td>Standard Visitor</td>
+                                    <td>15 working days</td>
+                                    <td>₹12,000</td>
+                                    <td>❌ No</td>
+                                </tr>
+                                <tr>
+                                    <td>🇦🇺 Australia</td>
+                                    <td>Tourist / eVisitor</td>
+                                    <td>10-20 working days</td>
+                                    <td>₹10,000</td>
+                                    <td>❌ No</td>
+                                </tr>
+                                <tr>
+                                    <td>🇰🇪 Kenya</td>
+                                    <td>e-Visa</td>
+                                    <td>3-5 working days</td>
+                                    <td>₹6,800</td>
+                                    <td>✅ Yes</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <p style="font-size:0.78rem;color:var(--text-muted);margin-top:0.75rem">* Fees and processing times
+                        are indicative and subject to change. Contact us for the latest rates.</p>
+                </div>
+
+                <div style="margin-top:5rem">
+                    <div class="section-header" style="text-align:left;margin-bottom:2rem">
+                        <p class="section-label">⚙ How It Works</p>
+                        <h2 class="section-title reveal" style="font-size:2rem">Simple <span
+                                class="highlight italic">Process</span></h2>
+                    </div>
+                    <div style="display:flex;flex-direction:column;gap:1rem;max-width:700px">
+                        <div class="process-step reveal"><span class="step-number">1</span>
+                            <div>
+                                <h4 style="color:var(--white);margin-bottom:0.3rem">Consultation</h4>
+                                <p style="font-size:0.87rem">Call or WhatsApp us with your destination and travel dates.
+                                    We advise on the right visa type.</p>
+                            </div>
+                        </div>
+                        <div class="process-step reveal delay-1"><span class="step-number">2</span>
+                            <div>
+                                <h4 style="color:var(--white);margin-bottom:0.3rem">Document Checklist</h4>
+                                <p style="font-size:0.87rem">We provide a detailed checklist of documents required and
+                                    help you prepare each one correctly.</p>
+                            </div>
+                        </div>
+                        <div class="process-step reveal delay-2"><span class="step-number">3</span>
+                            <div>
+                                <h4 style="color:var(--white);margin-bottom:0.3rem">Application Submission</h4>
+                                <p style="font-size:0.87rem">We fill and submit your application, schedule embassy
+                                    appointments if required.</p>
+                            </div>
+                        </div>
+                        <div class="process-step reveal"><span class="step-number">4</span>
+                            <div>
+                                <h4 style="color:var(--white);margin-bottom:0.3rem">Status Tracking</h4>
+                                <p style="font-size:0.87rem">We track your application and keep you updated at every
+                                    stage until approval.</p>
+                            </div>
+                        </div>
+                        <div class="process-step reveal delay-1"><span class="step-number">5</span>
+                            <div>
+                                <h4 style="color:var(--white);margin-bottom:0.3rem">Passport Delivery</h4>
+                                <p style="font-size:0.87rem">Once stamped, we arrange secure courier delivery of your
+                                    passport to your doorstep.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="components.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
